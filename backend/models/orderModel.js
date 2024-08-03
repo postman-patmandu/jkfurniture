@@ -1,5 +1,5 @@
 import mongoose, { Types } from 'mongoose';
-import { type } from 'os';
+// import { type } from 'os';
 
 const orderSchema = new mongoose.Schema({
     user: {
