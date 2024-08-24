@@ -5,14 +5,17 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../../slices/users-api-slice.component";
 import { logout } from "../../slices/auth-slice.component";
+import SearchBox from "../search-box/search-box.component";
 import logo from "../../assets/logo.png";
+import { resetCart } from "../../slices/cart-slice.component";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
   const { userInfo } = useSelector((state) => state.auth);
 
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [ logoutApiCall ] = useLogoutMutation();
 
@@ -20,6 +23,8 @@ const Header = () => {
     try {
       await logoutApiCall().unwrap();
       dispatch(logout());
+      dispatch(resetCart());
+      Navigate('/login');
     } catch (err) {
       console.log(err);
     }
@@ -38,6 +43,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ms-auto">
+              <SearchBox />
               <LinkContainer to="/cart">
                 <Nav.Link>
                   <FaShoppingCart /> Cart
