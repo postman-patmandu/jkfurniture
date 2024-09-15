@@ -16,7 +16,7 @@ import Message from "../../components/message/message.component";
 import Loader from "../../components/loader/loader.component";
 import {
   useGetOrderDetailsQuery,
-  usePayOrderMutation,
+  // usePayOrderMutation,
   useDeliverOrderMutation,
 } from "../../slices/orders-api-slice.component";
 import { saveOrderId } from "../../slices/cart-slice.component";
@@ -42,7 +42,7 @@ const OrderScreen = () => {
     error,
   } = useGetOrderDetailsQuery(orderId);
 
-  const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
+  // const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
 
   const [deliverOrder, { isLoading: loadingDeliver }] = useDeliverOrderMutation();
 
@@ -255,7 +255,7 @@ const OrderScreen = () => {
               </ListGroup.Item>
               {!order.isPaid && (
                 <ListGroup.Item>
-                  {loadingPay && <Loader />}
+                  {/* {loadingPay && <Loader />} */}
 
                   {/* {isPending ? (
                     <Loader />
@@ -277,7 +277,7 @@ const OrderScreen = () => {
                       
                       
                       <Button onClick={makePayment}>
-                        Stripe Order
+                        Complete Order
                       </Button>
                       
                     </div>

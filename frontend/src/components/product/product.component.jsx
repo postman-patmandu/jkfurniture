@@ -5,7 +5,7 @@ import Rating from '../rating/rating.component';
 const Product = ({ product }) => {
     const productHref = `/product/${product._id}`;
   return (
-    <Card className='my-3 p-3 rounded'>
+    <Card className='my-3 rounded'>
         <Link to={productHref}>
         <Card.Img src={product.image} variant='top' />
         </Link>
@@ -13,7 +13,7 @@ const Product = ({ product }) => {
         <CardBody>
             <Link to={productHref}>
                 <Card.Title as='div' className='product-title'>
-                    <strong>{product.name}</strong>
+                    <strong>{product.name}{product.category}</strong>
                 </Card.Title>
             </Link>
 

@@ -33,7 +33,7 @@ const PlaceOrderScreen = () => {
             paymentMethod: cart.paymentMethod,
             itemsPrice: cart.itemsPrice,
             shippingPrice: cart.shippingPrice,
-            taxPrice: cart.taxPrice,
+            // taxPrice: cart.taxPrice,
             totalPrice: cart.totalPrice,
         }).unwrap();
         dispatch(clearCartItems());

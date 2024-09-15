@@ -1,0 +1,14 @@
+{
+  "heroImages": [
+    {
+      "name": "Pariss Collection",
+      "image": "/images/paris-bedroom-hero-2.jpg",
+      "description": ""
+    },
+    {
+      "name": "Industrial",
+      "image": "/images/paris-bedroom-hero-1.jpg",
+      "description": ""
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 // import { useNavigate } from 'react-router-dom';
-import { Badge, Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { Badge, Navbar, Nav, Container, Col } from "react-bootstrap";
+import { FaBed, FaChair, FaHouseUser, FaShoppingCart, FaTable, FaUser } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../../slices/users-api-slice.component";
@@ -30,31 +30,63 @@ const Header = () => {
     }
   }
 
+  const menuLink = (event) => {
+    event.preventDefault();
+    console.log(event);
+    const item = event.target.dataset.link;
+    navigate(`/search/${item}`);
+  }
+
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
-        <Container>
+      <Container className="brand mt-4">
+        <Col lg={6}>
           <LinkContainer to="/">
+            <img src={logo} alt="furniture shop" />
+          </LinkContainer>
+        </Col>
+      </Container>
+      <Navbar variant="light" expand="md" collapseOnSelect>
+        <Container>
+          <LinkContainer to="/cart">
+            <Nav.Link id="cart-items">
+              <FaShoppingCart className="me-2"/><span>Shopping Cart Items</span>
+              {cartItems.length > 0 && (
+                <Badge pill bg="success" style={{ marginLeft: "5px" }}>
+                  {cartItems.reduce((a, c) => a + c.qty, 0)}
+                </Badge>
+              )}
+            </Nav.Link>
+          </LinkContainer>
+          {/* <LinkContainer to="/">
             <Navbar.Brand>
               <img src={logo} alt="jk furniture" />
-              JK Furniture
+              Furniture Shop
             </Navbar.Brand>
-          </LinkContainer>
+          </LinkContainer> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="ms-auto">
-              <SearchBox />
-              <LinkContainer to="/cart">
-                <Nav.Link>
-                  <FaShoppingCart /> Cart
-                  {cartItems.length > 0 && (
-                    <Badge pill bg="success" style={{ marginLeft: "5px" }}>
-                      {cartItems.reduce((a, c) => a + c.qty, 0)}
-                    </Badge>
-                  )}
-                </Nav.Link>
+          <Navbar.Collapse className="justify-content-end">
+            <Nav className="ms-auto flex-wrap">
+            <a href="/" onClick={menuLink} data-link="dining" className="inline-block me-2 nav-link active">Dining Room</a>
+            <a href="/" onClick={menuLink} data-link="table" className="inline-block me-2 nav-link active">Living Room</a>
+            <a href="/" onClick={menuLink} data-link="bed" className="inline-block me-2 nav-link active">Bedroom</a>
+            <a href="/" onClick={menuLink} data-link="display" className="inline-block me-2 nav-link active">Display Units</a>
+            <a href="/" onClick={menuLink} data-link="chair" className="inline-block me-2 nav-link active">Chairs</a>
+              {/* <LinkContainer to="/profile">
+                <Nav.Link className="inline-block me-2">Living Room</Nav.Link>
               </LinkContainer>
-              { userInfo ? (
+              <LinkContainer to="/profile">
+                <Nav.Link className="inline-block me-2">Bedroom</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/profile">
+                <Nav.Link className="inline-block me-2">Display-units</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/profile">
+                <Nav.Link className="inline-block me-5">Chairs</Nav.Link>
+              </LinkContainer> */}
+              <SearchBox />
+              
+              {/* { userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
@@ -82,7 +114,7 @@ const Header = () => {
                     <NavDropdown.Item>Orders</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>
-              )}
+              )} */}
             </Nav>
           </Navbar.Collapse>
         </Container>
