@@ -72,6 +72,10 @@ const orderSchema = new mongoose.Schema({
     deliveredAt: {
         type: Date,
     },
+    // isPickup: {
+    //     type: Boolean,
+    //     required: true,
+    // },
 }, {
     timestamps: true
 });

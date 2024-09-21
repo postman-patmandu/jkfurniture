@@ -32,7 +32,7 @@ const Header = () => {
 
   const menuLink = (event) => {
     event.preventDefault();
-    console.log(event);
+    
     const item = event.target.dataset.link;
     navigate(`/search/${item}`);
   }

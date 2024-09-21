@@ -14,14 +14,18 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import Rating from "../../components/rating/rating.component";
 import Loader from "../../components/loader/loader.component";
+import Product from "../../components/product/product.component";
+import Paginate from "../../components/paginate/paginate.component";
 import Message from "../../components/message/message.component";
 import { toast } from "react-toastify";
 import Meta from "../../components/meta/meta.component";
 import {
+  useGetTopProductsQuery,
   useGetProductDetailsQuery,
   useCreateReviewMutation,
 } from "../../slices/products-api-slice.component";
 import { addToCart } from "../../slices/cart-slice.component";
+import ProductCategories from "../../components/product-categories/product-categories.component";
 
 // import products from '../../products';
 
@@ -34,6 +38,9 @@ const ProductScreen = () => {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
+
+  const { pageNumber, keyword } = useParams();
+  const { data: products, isLoadingData } = useGetTopProductsQuery();
 
   const {
     data: product,
@@ -112,7 +119,7 @@ const ProductScreen = () => {
                 />
               </ListGroup.Item>
               <ListGroup.Item>
-                <span className="d-inline-block mt-2">
+                <span className="d-inline-block my-2">
                   <strong>Price: </strong>
                 </span>{" "}
                 ${product.price}
@@ -292,6 +299,18 @@ const ProductScreen = () => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
+          </Row>
+          {/* <Row><ProductCategories /></Row> */}
+          <Row>
+            <h1 className="headline mt-5 mb-5">Top Products</h1>
+            <h2 className="headline-tag">Selection</h2>
+            {isLoadingData ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
+             : (
+            products.map((product) => (
+              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            )))}
           </Row>
         </>
       )}

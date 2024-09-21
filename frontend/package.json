@@ -16,6 +16,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "frontend": "file:",
+    "jkfurniture": "file:..",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",

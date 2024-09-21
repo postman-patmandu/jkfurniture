@@ -25,7 +25,7 @@ const PlaceOrderScreen = () => {
   }, [cart.paymentMethod, cart.shippingAddress.address, navigate]);
 
   const placeOrderHandler = async () => {
-    console.log("cart: ", cart);
+    
     try {
         const res = await createOrder({
             orderItems: cart.cartItems,
@@ -113,12 +113,12 @@ const PlaceOrderScreen = () => {
                                 <Col>${cart.shippingPrice}</Col>
                             </Row>
                         </ListGroup.Item>
-                        <ListGroup.Item>
+                        {/* <ListGroup.Item>
                             <Row>
                                 <Col>Tax:</Col>
                                 <Col>${cart.taxPrice}</Col>
                             </Row>
-                        </ListGroup.Item>
+                        </ListGroup.Item> */}
                         <ListGroup.Item>
                             <Row>
                                 <Col>Total:</Col>

@@ -16,7 +16,6 @@ const PaymentSuccess = () => {
         const response = await fetch('/api/stripe/order-success?session_id=' + sessionId);
         const sessions = await response.json();
 
-        console.log('Stripe Checkout: ', sessions.session.payment_status);
         return await sessions.session.payment_status;
     }
 

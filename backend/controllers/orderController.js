@@ -2,6 +2,8 @@ import asyncHandler from "../middleware/asyncHandler.js";
 import Order from "../models/orderModel.js";
 import Product from '../models/productModel.js';
 import { calcPrices } from '../utils/calcPrices.js';
+import { sendFurnitureEmail } from "./emailController.js";
+
 // import { verifyPayPalPayment, checkIfNewTransaction } from '../utils/paypal.js';
 
 // @desc    Create new order
@@ -42,7 +44,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
       });
   
       // calculate prices
-      const { itemsPrice, taxPrice, shippingPrice, totalPrice } =
+      const { itemsPrice, shippingPrice, totalPrice } =
         calcPrices(dbOrderItems);
   
       const order = new Order({
@@ -56,9 +58,10 @@ const addOrderItems = asyncHandler(async (req, res) => {
         shippingAddress,
         paymentMethod,
         itemsPrice,
-        taxPrice,
+        // taxPrice,
         shippingPrice,
         totalPrice,
+        // isPickup,
       });
   
       const createdOrder = await order.save();
@@ -129,6 +132,10 @@ const getOrderById = asyncHandler(async (req, res) => {
 // @access  Private
 const updateOrderToPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
+    
+    sendFurnitureEmail('patrickhayes6@gmail.com')
+    .then(info => console.log(info));
+  
 
     if (order) {
         order.isPaid = true;
@@ -141,7 +148,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
         };
 
         const updatedOrder = await order.save();
-
+        
         res.status(200).json(updatedOrder);
     } else {
         res.status(404);
@@ -154,7 +161,8 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 // @access  Private
 const orderPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
-
+    sendFurnitureEmail('patrickhayes6@gmail.com')
+    .then(info => console.log(info));
     if (order) {
         order.isPaid = true;
         order.paidAt = Date.now();

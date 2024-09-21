@@ -33,7 +33,7 @@ const NewPaymentSuccess = () => {
     const sessionId = id.get('session_id');
 
     // const { id: orderId } = useParams();
-    console.log('Order form: ', cart.orderId);
+    
     const orderId = cart.orderId;
 
     const {
@@ -58,7 +58,7 @@ const NewPaymentSuccess = () => {
         const fetchData = async () => {
         const response = await fetch('/api/stripe/order-success?session_id=' + sessionId);
         const json = await response.json();
-        console.log('JSON: ', json.session);
+        
         setListing(json.session);
     };
 

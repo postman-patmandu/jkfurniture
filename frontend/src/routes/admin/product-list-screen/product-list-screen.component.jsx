@@ -48,7 +48,7 @@ const ProductListScreen = () => {
           <h1>Products</h1>
         </Col>
         <Col className='text-end'>
-          <Button className='btn-sm m-3' onClick={ createProductHandler }><FaEdit /> Create a Product</Button>
+          <Button className='btn-sm my-3' onClick={ createProductHandler }><FaEdit /> Create a Product</Button>
         </Col>
       </Row>
 
@@ -104,4 +104,4 @@ const ProductListScreen = () => {
   );
 };
 
-export default ProductListScreen
+export default ProductListScreen;

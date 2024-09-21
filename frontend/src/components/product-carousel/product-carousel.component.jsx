@@ -7,7 +7,7 @@ import heroData from '../../data/hero-images.json';
 
 const ProductCarousel = () => {
   const hero = heroData.heroImages;
-  console.log(hero[0].image);
+
   // const { data: products, isLoading, error } = useGetTopProductsQuery();
   // return isLoading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
   // : (

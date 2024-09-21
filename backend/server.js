@@ -1,5 +1,5 @@
 import path from 'path';
-import express from 'express';
+import express, { response } from 'express';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 dotenv.config();
@@ -23,7 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Cookie parser middleware
 app.use(cookieParser());
-
 
  app.use('/api/products', productRoutes);
  app.use('/api/users', userRoutes);
@@ -60,4 +59,4 @@ app.get('/api/products/:id', (req, res) => {
 app.use(notFound);
 app.use(errorHandler);
 
- app.listen(port, () => console.log(`Server is running on ${port}`));
+ app.listen(port, () => console.log(`Server is running in ${process.env.NODE_ENV} on ${port}`));

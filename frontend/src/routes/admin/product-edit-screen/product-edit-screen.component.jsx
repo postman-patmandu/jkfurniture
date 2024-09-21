@@ -13,7 +13,6 @@ import {
 
 const ProductEditScreen = () => {
   const { id: productId } = useParams();
-  console.log(productId);
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [description, setDescription] = useState("");
@@ -54,7 +53,7 @@ const ProductEditScreen = () => {
       setCategory(product.category || "");
       setCountInStock(product.countInStock || 0);
       setMaterial(product.material || "");
-      setWidth(product.Width || 0);
+      setWidth(product.width || 0);
       setHeight(product.height || 0);
       setLength(product.length || 0);
       setHomeSpace(product.homeSpace || "");

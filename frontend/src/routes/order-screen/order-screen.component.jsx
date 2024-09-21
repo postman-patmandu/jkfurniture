@@ -114,12 +114,10 @@ const OrderScreen = () => {
   //       return orderId;
   //   });
   // }
-  console.log("Order Items: ", order);
+  
 
   const makePayment = async (actions) => {
     const stripe = await loadStripe(KEY);
-
-    console.log("Order Items: ", order);
 
     const body = {
       products: order.orderItems,
@@ -137,9 +135,7 @@ const OrderScreen = () => {
     });
 
     const session = await response.json();
-    console.log("Session is: ", response);
-
-    console.log("Status: ", response);
+    
     if (response.status === 200) {
       // await payOrder({ orderId, details: { payer: {} } });
       // refetch();
@@ -244,10 +240,10 @@ const OrderScreen = () => {
                   <Col>Shipping</Col>
                   <Col>${order.shippingPrice}</Col>
                 </Row>
-                <Row>
+                {/* <Row>
                   <Col>Tax</Col>
                   <Col>${order.taxPrice}</Col>
-                </Row>
+                </Row> */}
                 <Row>
                   <Col>Total</Col>
                   <Col>${order.totalPrice}</Col>

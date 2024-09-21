@@ -12,7 +12,6 @@ import {
 
 const UserEditScreen = () => {
   const { id: userId } = useParams();
-  console.log(userId);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isAdmin, setisAdmin] = useState(false);

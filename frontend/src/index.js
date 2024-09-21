@@ -28,6 +28,9 @@ import PlaceOrderScreen from './routes/place-order-screen/place-order-screen.com
 import OrderScreen from './routes/order-screen/order-screen.component';
 import NewPaymentSuccess from './routes/payment-success/new-payment-success.component';
 import ProfileScreen from './routes/profile-screen/profile-screen.component';
+import PrivacyScreen from './routes/privacy-screen/privacy-screen.component';
+import SupportScreen from './routes/support-screen/support-screen.component';
+import TermsScreen from './routes/terms-screen/terms-screen.component';
 import OrderListScreen from './routes/admin/order-list-screen/order-list-screen.component';
 import ProductListScreen from './routes/admin/product-list-screen/product-list-screen.component';
 import ProductEditScreen from './routes/admin/product-edit-screen/product-edit-screen.component';
@@ -45,6 +48,9 @@ const router = createBrowserRouter(
       <Route path='/cart' element={<CartScreen />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
+      <Route path='/privacy' element={<PrivacyScreen />} />
+      <Route path='/terms' element={<TermsScreen />} />
+      <Route path='/support' element={<SupportScreen />} />
 
       <Route path='' element={<PrivateRoute />}>
         <Route path='/shipping' element={<ShippingScreen />} />
