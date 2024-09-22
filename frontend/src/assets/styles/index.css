@@ -127,6 +127,11 @@ h1.headline {
   text-decoration: none;
 }
 
+.stock-badge {
+  background-color: #9e9e9e;
+  color: #fff;
+}
+
 @media only screen and (max-width: 760px) {
   .brand img {
     width: 40%;
@@ -147,7 +152,6 @@ h1.headline {
   .category-container img {
     max-width: 50%;
   }
-
 }
 
 @media only screen and (max-width: 1024px) {

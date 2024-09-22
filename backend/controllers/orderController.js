@@ -133,8 +133,8 @@ const getOrderById = asyncHandler(async (req, res) => {
 const updateOrderToPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
     
-    sendFurnitureEmail('patrickhayes6@gmail.com')
-    .then(info => console.log(info));
+    // sendFurnitureEmail('patrickhayes6@gmail.com')
+    // .then(info => console.log(info));
   
 
     if (order) {
@@ -161,8 +161,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 // @access  Private
 const orderPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id);
-    sendFurnitureEmail('patrickhayes6@gmail.com')
-    .then(info => console.log(info));
+
     if (order) {
         order.isPaid = true;
         order.paidAt = Date.now();
