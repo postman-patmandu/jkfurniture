@@ -55,25 +55,22 @@ const CartScreen = () => {
                   <Col md={2}>${item.price}</Col>
                   <Col md={2}>
                     <Form.Control
+                      className="form-select form-select-sm"
                       as="select"
                       value={item.qty}
                       onChange={(e) =>
                         addToCartHandler(item, Number(e.target.value))
                       }
                     >
-                      {[
-                        ...Array(item.countInStock)
-                          .keys()
-                          .map((x) => (
-                            <option key={x + 1} value={x + 1}>
-                              {x + 1}
-                            </option>
-                          )),
-                      ]}
+                      {[...Array(item.countInStock).keys()].map((x) => (
+                        <option key={x + 1} value={x + 1}>
+                          {x + 1}
+                        </option>
+                      ))}
                     </Form.Control>
                   </Col>
                   <Col md={2}>
-                    <Button type="button" variant="light">
+                    <Button type="button" variant="light" className="ntn btn-sm">
                       <FaTrash
                         onClick={(e) => {
                           removeFromCartHandler(item._id);
