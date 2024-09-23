@@ -21,10 +21,11 @@ const products = [
     wholesaleLC: 278.24,
     costPlusGST: 319.17,
     retailRounded: 590.00,
+    keywords: 'Headboard Bedroom Beds Bed 130 1200 1730 Pine Wood American Rustic Furniture', 
   },
   {
     name: 'Bedside Cabinet with 2 Drawers',
-    image: '/images/phone.jpg',
+    image: '/images/camera.jpg',
     code: 'AR791-F2',
     homeSpace: 'Bedroom',
     description:
@@ -44,7 +45,7 @@ const products = [
     wholesaleLC: 232.88,
     costPlusGST: 267.81,
     retailRounded: 495.00,
-    
+    keywords: 'Bedside Cabinet 2 Drawers Drawer Bedroom Beds Bed 450 635 530 Pine Wood American Rustic Furniture',
   }, 
   {
     name: '1800mm Dinining Table',
@@ -68,6 +69,7 @@ const products = [
     wholesaleLC: 421.47,
     costPlusGST: 484.69,
     retailRounded: 895.00,
+    keywords: 'Dining Room Rooms Suite Suites Table Tables 1050 770 1800 Pine Wood American Rustic Furniture',
   },
   {
     name: '7 Piece 1800mm Dining Suite',
@@ -75,7 +77,7 @@ const products = [
     code: 'ARLC - 7PCE 1800  DIN',
     homeSpace: 'Dining Room',
     description:
-      'The American Rustic Pine Dining Table Set offers timeless charm with a solid pine table and matching chairs, showcasing rich wood grain and a weathered finish. Perfect for a cozy farmhouse or cabin, this set brings warmth and rustic elegance to any dining space with its handcrafted, sturdy construction.',
+      'The American Rustic Pine Dining Table Set offers timeless charm with a solid pine table and matching chairs, showcasing rich wood grain and a weathered finish. Perfect for a cozy farmHome or cabin, this set brings warmth and rustic elegance to any dining space with its handcrafted, sturdy construction.',
     brand: 'Furniture Shop',
     style: 'American Rustic',
     category: 'American Rustic',
@@ -91,6 +93,7 @@ const products = [
     wholesaleLC: 814.86,
     costPlusGST: 937.09,
     retailRounded: 1735.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair 1050 770 1800 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Bar Chair with back',
@@ -114,6 +117,7 @@ const products = [
     wholesaleLC: 114.48,
     costPlusGST: 131.65,
     retailRounded: 245.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back Stool Bar Barstool 460 1145 430 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Bar Complete',
@@ -137,6 +141,7 @@ const products = [
     wholesaleLC: 1059.21,
     costPlusGST: 1218.09,
     retailRounded: 2255.00,
+    keywords: 'Dining Living Rooms Room Bar Bars Complete Table Tables Bar Stool Stools Chairs Chair 660 2090 1900 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Bar Stool',
@@ -160,6 +165,7 @@ const products = [
     wholesaleLC: 72.90,
     costPlusGST: 83.84,
     retailRounded: 155.00,
+    keywords: 'Dining Living Rooms Room Bar Bars Complete Table Tables Bar Stool Stools Chairs Chair 460 1145 430 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Bedside Cabinet',
@@ -183,6 +189,7 @@ const products = [
     wholesaleLC: 166.19,
     costPlusGST: 191.11,
     retailRounded: 350.00,
+    keywords: 'Bedside Cabinet 2 Drawers Drawer Rooms Bedroom Beds Bed Pine Wood American Rustic Furniture',
   },
   {
     name: 'Blanket Box',
@@ -206,6 +213,7 @@ const products = [
     wholesaleLC: 292.68,
     costPlusGST: 336.58,
     retailRounded: 620.00,
+    keywords: 'Blanket Box Cabinet Rooms Bedroom Beds Bed 540 550 110 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Book Shelf',
@@ -229,6 +237,7 @@ const products = [
     wholesaleLC: 448.88,
     costPlusGST: 516.21,
     retailRounded: 955.00,
+    keywords: 'Book Shelf Bookshelf Bookshelves Shelves Case Rooms Living Room Lounge Bedroom Beds Bed 350 1950 1030 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Buffet with 4 Doors & 3 Drawers - 1630mm',
@@ -252,6 +261,7 @@ const products = [
     wholesaleLC: 504.09,
     costPlusGST: 579.70,
     retailRounded: 1070.00,
+    keywords: 'Buffet Table 4 Doors 2 Drawers Rooms Dining Room 450 860 1630 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Corner TV Stand - 1260mm',
@@ -275,6 +285,7 @@ const products = [
     wholesaleLC: 310.91,
     costPlusGST: 357.54,
     retailRounded: 660.00,
+    keywords: 'Living Room Lounge Cabinet Rooms TV Stand 2 Doors Cabinet 480 640 1260 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Coffee Table',
@@ -298,6 +309,7 @@ const products = [
     wholesaleLC: 303.35,
     costPlusGST: 348.85,
     retailRounded: 645.00,
+    keywords: 'Living Room Lounge Coffee Table Tables 2 Drawers Drawer 0 0 0 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Dining Chair Leatherette 2 Pieces per box',
@@ -321,6 +333,7 @@ const products = [
     wholesaleLC: 107.19,
     costPlusGST: 123.27,
     retailRounded: 225.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back Leatherette 2 Pieces 555 1050 470 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Display Unit',
@@ -344,6 +357,7 @@ const products = [
     wholesaleLC: 522.05,
     costPlusGST: 600.35,
     retailRounded: 1110.00,
+    keywords: 'Display Units Cabinets Shelf Shelves Dining Room Living Room Lounge 365 1950 1030 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Dresser & Mirror 3 Over 4 Drawers',
@@ -367,6 +381,7 @@ const products = [
     wholesaleLC: 573.35,
     costPlusGST: 659.35,
     retailRounded: 1215.00,
+    keywords: 'Bedside Dresser Drawers 4 Drawers Drawer Mirror Bedroom Beds Bed 450 816 1400 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Low TV Unit with 2 Drawers & 2 Niches - 1660mm',
@@ -390,6 +405,7 @@ const products = [
     wholesaleLC: 412.02,
     costPlusGST: 473.82,
     retailRounded: 875.00,
+    keywords: 'Living Room Lounge Cabinet Bedroom Rooms TV Stand Unit Low 2 Doors 1 Drawers Niches 480 640 1660 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Low TV Unit with 1 Drawers & 2 Niches - 1230mm',
@@ -413,6 +429,7 @@ const products = [
     wholesaleLC: 367.20,
     costPlusGST: 422.28,
     retailRounded: 780.00,
+    keywords: 'Living Room Lounge Cabinet Bedroom Rooms TV Stand Unit Low 2 Doors 1 Drawers Niches 480 640 1230 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Hall Table with 4 Drawers & Shelf',
@@ -436,6 +453,7 @@ const products = [
     wholesaleLC: 318.20,
     costPlusGST: 365.92,
     retailRounded: 675.00,
+    keywords: 'Living Room Lounge Hall Hallway Console Tables Cabinet Bedroom Rooms Unit 4 Drawers Shelf Shelves 400 820 1365 Pine Wood American Rustic Furniture',
   },
   {
     name: 'Queen/King Headboard 5 Piece Pack',
@@ -459,6 +477,7 @@ const products = [
     wholesaleLC: 579.42,
     costPlusGST: 666.33,
     retailRounded: 1230.00,
+    keywords: 'Headboard Bedroom Beds Bed 130 1200 1730 Pine Wood 5 Piece Pack American Rustic Furniture', 
   },
   {
     name: 'Wardrobe',
@@ -482,6 +501,7 @@ const products = [
     wholesaleLC: 641.93,
     costPlusGST: 738.21,
     retailRounded: 1365.00,
+    keywords: 'Wardrobe Cupboards Bedroom Beds Bed 2 Drawers 2 Doors 580 1950 1200 Pine Wood American Rustic Furniture', 
   },
   {
     name: 'Wine Rack',
@@ -505,6 +525,7 @@ const products = [
     wholesaleLC: 314.69,
     costPlusGST: 361.89,
     retailRounded: 670.00,
+    keywords: 'Wine Rack Racks Alcohol Shelf Shelves 370 1020 925 Pine Wood American Rustic Furniture', 
   },
   {
     name: 'Casablanca Blue Bedside Cabinet',
@@ -528,6 +549,7 @@ const products = [
     wholesaleLC: 190.35,
     costPlusGST: 218.90,
     retailRounded: 405.00,
+    keywords: 'Bedside Cabinet Green Blue 2 Drawers Drawer Bedroom Beds Bed 580 600 500 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Green Bedside Cabinet',
@@ -551,6 +573,7 @@ const products = [
     wholesaleLC: 190.35,
     costPlusGST: 218.90,
     retailRounded: 405.00,
+    keywords: 'Bedside Cabinet Green Blue 2 Drawers Drawer Bedroom Beds Bed 580 600 500 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Lingerie Unit',
@@ -567,13 +590,14 @@ const products = [
     rating: 0,
     numReviews: 0,
     material: 'Solid Timber',
-    width: 580,
-    height: 600,
-    length: 500,
+    width: 0,
+    height: 0,
+    length: 0,
     landedCost: 350.90,
     wholesaleLC: 473.72,
     costPlusGST: 544.77,
     retailRounded: 1005.00,
+    keywords: 'Lingerie Unit Bedside Cabinet Chest Green Blue 6 Drawers Drawer Bedroom Beds Bed 0 0 0 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca 3 Drawer TV Unit',
@@ -597,6 +621,7 @@ const products = [
     wholesaleLC: 466.70,
     costPlusGST: 536.70,
     retailRounded: 990.00,
+    keywords: 'Living Room Lounge Cabinet Rooms TV Stand Unit Low 3 Drawers Niches 450 600 1500 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Book Case',
@@ -620,6 +645,7 @@ const products = [
     wholesaleLC: 445.23,
     costPlusGST: 512.01,
     retailRounded: 945.00,
+    keywords: 'Book Shelf Bookshelf Bookshelves Shelves Case Rooms Living Room Lounge Bedroom Beds Bed 950 1900 340 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Buffet',
@@ -643,6 +669,7 @@ const products = [
     wholesaleLC: 608.45,
     costPlusGST: 699.71,
     retailRounded: 1295.00,
+    keywords: 'Buffet Table 2 Doors 3 Drawers Rooms Dining Room 450 860 1600 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca 2 Drawer Coffee Table',
@@ -650,7 +677,7 @@ const products = [
     code: 'CAS-L-248P',
     homeSpace: 'Living Room',
     description:
-    'This solid timber 2-drawer coffee table blends rustic charm with functionality. Crafted from premium wood with a natural finish, it features a spacious tabletop for decor and two deep drawers for hidden storage. The sturdy construction and clean lines make it a timeless centerpiece for any living room.',
+    'This solid timber 2-drawer Coffee table blends rustic charm with functionality. Crafted from premium wood with a natural finish, it features a spacious tabletop for decor and two deep drawers for hidden storage. The sturdy construction and clean lines make it a timeless centerpiece for any living room.',
     brand: 'Furniture Shop',
     style: 'Casablanca',
     category: 'Casablanca',
@@ -666,6 +693,7 @@ const products = [
     wholesaleLC: 336.42,
     costPlusGST: 386.88,
     retailRounded: 715.00,
+    keywords: 'Living Room Lounge Coffee Table Tables Unit 2 Drawers Drawer 420 600 1200 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Display Unit',
@@ -689,6 +717,7 @@ const products = [
     wholesaleLC: 572.13,
     costPlusGST: 657.95,
     retailRounded: 1215.00,
+    keywords: 'Display Units Cabinets Shelf Shelves Dining Room Living Room Lounge 950 1900 340 Solid Timber Wood Casablanca Furniture',
   },
   {
     name: 'Casablanca Wine Rack',
@@ -712,6 +741,7 @@ const products = [
     wholesaleLC: 494.64,
     costPlusGST: 568.84,
     retailRounded: 1050.00,
+    keywords: 'Wine Rack Racks Alcohol Shelf Shelves 1610 400 400 Solid Timber Wood Casablanca Furniture', 
   },
   {
     name: 'Farm Home Bedside Drawers',
@@ -735,6 +765,7 @@ const products = [
     wholesaleLC: 137.03,
     costPlusGST: 157.58,
     retailRounded: 290.00,
+    keywords: 'Bedside Cabinet Green 1 Drawers Drawer Bedroom Beds Bed 400 550 550 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Coffee Table',
@@ -742,7 +773,7 @@ const products = [
     code: 'FH-L01',
     homeSpace: 'Living Room',
     description:
-    'This solid timber coffee table blends rustic charm with timeless design. Crafted from premium wood with a rich, natural finish, it features a spacious, sturdy tabletop perfect for decor or casual dining. The robust construction and clean lines make it a versatile and elegant centerpiece for any living room.',
+    'This solid timber Coffee table blends rustic charm with timeless design. Crafted from premium wood with a rich, natural finish, it features a spacious, sturdy tabletop perfect for decor or casual dining. The robust construction and clean lines make it a versatile and elegant centerpiece for any living room.',
     brand: 'Furniture Shop',
     style: 'Farm Home',
     category: 'Farm Home',
@@ -758,6 +789,7 @@ const products = [
     wholesaleLC: 272.57,
     costPlusGST: 313.45,
     retailRounded: 580.00,
+    keywords: 'Living Room Lounge Coffee Table Tables Unit 2 Drawers Drawer 420 600 1200 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Dining Chair',
@@ -781,6 +813,7 @@ const products = [
     wholesaleLC: 101.79,
     costPlusGST: 117.06,
     retailRounded: 215.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back 523 1000 470 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Dresser with 6 Drawers',
@@ -804,6 +837,7 @@ const products = [
     wholesaleLC: 482.49,
     costPlusGST: 554.86,
     retailRounded: 1025.00,
+    keywords: 'Bedside Dresser Drawers 6 Drawers Drawer Bedroom Beds Bed 420 820 1350 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Hall Table with 2 Drawers (Console Table)',
@@ -827,6 +861,7 @@ const products = [
     wholesaleLC: 217.35,
     costPlusGST: 249.95,
     retailRounded: 460.00,
+    keywords: 'Living Room Lounge Hall Hallway Console Tables Cabinet Bedroom Rooms Unit 2 Drawers Shelf Shelves 380 780 1200 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Lamp Table',
@@ -850,6 +885,7 @@ const products = [
     wholesaleLC: 165.11,
     costPlusGST: 189.87,
     retailRounded: 350.00,
+    keywords: 'Lamp Living Room Lounge Bedroom Bed Table Tables Drawers Drawer 550 550 550 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Mirror',
@@ -873,6 +909,7 @@ const products = [
     wholesaleLC: 115.29,
     costPlusGST: 132.58,
     retailRounded: 245.00,
+    keywords: 'Mirror Room Bedroom Bed Hall Hallway 25 1000 1000 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Farm Home Queen/King Headboard',
@@ -896,6 +933,7 @@ const products = [
     wholesaleLC: 195.89,
     costPlusGST: 225.27,
     retailRounded: 415.00,
+    keywords: 'Headboard Queen King Bedroom Beds Bed 73 1200 1710 Solid Timber Wood Farm Home Furniture', 
   },
   {
     name: 'Farm Home Queen Bed',
@@ -919,6 +957,7 @@ const products = [
     wholesaleLC: 475.74,
     costPlusGST: 547.10,
     retailRounded: 1000.00,
+    keywords: 'Headboard Queen Bedroom Beds Bed 1710 1200 2183 Solid Timber Wood Farm Home Furniture', 
   },
   {
     name: 'Farm Home Queen Bed with Storage',
@@ -942,6 +981,8 @@ const products = [
     wholesaleLC: 621.95,
     costPlusGST: 715.24,
     retailRounded: 1320.00,
+    keywords: 'Headboard Queen Bedroom Beds Bed Storage 2 Drawers Drawer 1710 1200 2183 Solid Timber Wood Farm Home Furniture', 
+    
   },
   {
     name: 'Farm Home Tall Boy with 4 Drawers',
@@ -965,6 +1006,7 @@ const products = [
     wholesaleLC: 449.96,
     costPlusGST: 517.45,
     retailRounded:955.00,
+    keywords: 'Tall Boy Dresser Bedroom Beds Bed Storage 4 Drawers Drawer 450 1200 980 Solid Timber Wood Farm Home Furniture', 
   },
   {
     name: 'Farm Home TV Unit',
@@ -972,7 +1014,7 @@ const products = [
     code: 'FH-L31',
     homeSpace: 'Living Room',
     description:
-    'A beautifully crafted solid timber tall boy featuring a sleek, minimalist design. Its natural wood grain adds warmth and character, making it a perfect blend of function and style. With clean lines and sturdy construction, this table offers a timeless elegance ideal for any entryway or living space.',
+    'A beautifully crafted solid timber TV Unit featuring a sleek, minimalist design. Its natural wood grain adds warmth and character, making it a perfect blend of function and style. With clean lines and sturdy construction, this table offers a timeless elegance ideal for any entryway or living space.',
     brand: 'Furniture Shop',
     style: 'Farm Home',
     category: 'Farm Home',
@@ -988,6 +1030,7 @@ const products = [
     wholesaleLC: 308.48,
     costPlusGST: 354.75,
     retailRounded: 655.00,
+    keywords: 'Living Room Lounge Cabinets Cabinet Bedroom Rooms TV Stand Unit Low 450 510 1640 Solid Timber Wood Farm Home Furniture',
   },
   {
     name: 'Industrial Dining Chair',
@@ -1011,6 +1054,7 @@ const products = [
     wholesaleLC: 151.74,
     costPlusGST: 174.50,
     retailRounded: 320.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back 465 1067 575 Solid Timber Wood Industrial Furniture',
   },
   {
     name: 'Industrial Hall Table (Console)',
@@ -1027,13 +1071,14 @@ const products = [
     rating: 0,
     numReviews: 0,
     material: 'Solid Timber',
-    width: 1300,
+    width: 380,
     height: 820,
-    length: 380,
+    length: 1300,
     landedCost: 216.20,
     wholesaleLC: 291.87,
     costPlusGST: 335.65,
     retailRounded: 620.00,
+    keywords: 'Living Room Lounge Hall Hallway Console Tables Cabinet Bedroom Rooms Unit 2 Drawers Shelf Shelves 380 820 1300 Solid Timber Wood Industrial Furniture',
   },
   {
     name: 'Industrial Queen Headboard',
@@ -1051,12 +1096,13 @@ const products = [
     numReviews: 0,
     material: 'Solid Timber',
     width: 2190,
-    height: 1200,
+    height: 2190,
     length: 73,
     landedCost: 154.00,
     wholesaleLC: 207.90,
     costPlusGST: 239.09,
     retailRounded: 440.00,
+    keywords: 'Headboard Queen King Bedroom Beds Bed 2190 2190 73 Solid Timber Wood Industrial Furniture', 
   },
   {
     name: 'Industrial Lamp Table',
@@ -1080,6 +1126,7 @@ const products = [
     wholesaleLC: 155.25,
     costPlusGST: 178.54,
     retailRounded: 330.00,
+    keywords: 'Lamp Living Room Lounge Bedroom Bed Table Tables Drawers Drawer 580 600 420 Solid Timber Wood Industrial Furniture',
   },
   {
     name: 'JA Leatherette Chair',
@@ -1103,6 +1150,7 @@ const products = [
     wholesaleLC: 92.34,
     costPlusGST: 106.19,
     retailRounded: 196.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back Leatherette 555 1050 470 Solid Timber Wood Industrial Furniture',
   },
   {
     name: 'Market Road Bedside Table with 3 Drawers',
@@ -1126,6 +1174,7 @@ const products = [
     wholesaleLC: 182.79,
     costPlusGST: 210.21,
     retailRounded: 385.00,
+    keywords: 'Bedside Table Tables Cabinet Green Bedroom Beds Bed 420 615 530 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Bookcase with 2 Drawers & 4 Shelves',
@@ -1149,6 +1198,7 @@ const products = [
     wholesaleLC: 699.84,
     costPlusGST: 804.82,
     retailRounded: 1485.00,
+    keywords: 'Book Shelf Bookshelf Bookshelves 4 Shelves Case Rooms 2 Drawers Drawer Living Room Lounge Bedroom Beds Bed 400 2000 1000 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Dining Chair',
@@ -1172,6 +1222,7 @@ const products = [
     wholesaleLC: 97.34,
     costPlusGST: 111.94,
     retailRounded: 205.00,
+    keywords: 'Dining Room Suite Table Tables Chairs Chair Back 555 1050 470 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Coffee Table with 2 Drawers',
@@ -1179,7 +1230,7 @@ const products = [
     code: 'MR-06-CT',
     homeSpace: 'Living Room',
     description:
-    'This solid timber coffee table combines functionality with rustic charm. Featuring a natural wood grain finish, it offers two spacious drawers for convenient storage, while its sturdy design ensures long-lasting use. Perfect for any living room, it adds warmth and style, providing both surface space and hidden organization.',
+    'This solid timber Coffee table combines functionality with rustic charm. Featuring a natural wood grain finish, it offers two spacious drawers for convenient storage, while its sturdy design ensures long-lasting use. Perfect for any living room, it adds warmth and style, providing both surface space and hidden organization.',
     brand: 'Furniture Shop',
     style: 'Market Road',
     category: 'Market Road',
@@ -1195,6 +1246,7 @@ const products = [
     wholesaleLC: 273.51,
     costPlusGST: 314.54,
     retailRounded: 580.00,
+    keywords: 'Living Room Lounge Coffee Table Tables 2 Drawers Drawer 600 420 1200 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Display Unit with 2 Drawers',
@@ -1218,6 +1270,7 @@ const products = [
     wholesaleLC: 749.79,
     costPlusGST: 862.26,
     retailRounded: 1595.00,
+    keywords: 'Display Units Cabinets Shelf Shelves Dining Room Living Room Lounge 2 Drawers Drawer 400 2000 1000 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Dresser with 6 Drawers',
@@ -1241,6 +1294,7 @@ const products = [
     wholesaleLC: 521.10,
     costPlusGST: 599.27,
     retailRounded: 1105.00,
+    keywords: 'Bedside Dresser Drawers 6 Drawers Drawer Bedroom Beds Bed 420 820 1350 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Market Road Lamp Table with 1 Drawer',
@@ -1264,6 +1318,8 @@ const products = [
     wholesaleLC: 223.83,
     costPlusGST: 257.40,
     retailRounded: 475.00,
+    keywords: 'Lamp Living Room Lounge Bedroom Bed Table Tables Drawers Drawer 600 500 600 Solid Timber Wood Market Road Furniture',
+    
   },
   {
     name: 'Market Road Tall Boy with 4 Drawers',
@@ -1287,6 +1343,7 @@ const products = [
     wholesaleLC: 540.14,
     costPlusGST: 621.16,
     retailRounded: 1145.00,
+    keywords: 'Tall Boy Dresser Bedroom Beds Bed Storage 4 Drawers Drawer 450 1200 1050 Solid Timber Wood Market Road Furniture', 
   },
   {
     name: 'Market Road TV Unit with 3 Drawers',
@@ -1310,6 +1367,7 @@ const products = [
     wholesaleLC: 399.87,
     costPlusGST: 459.85,
     retailRounded: 850.00,
+    keywords: 'Living Room Lounge Cabinets Cabinet Bedroom Rooms 3 Drawers Drawer TV Stand Unit Low 480 515 1600 Solid Timber Wood Market Road Furniture',
   },
   {
     name: 'Paris Blanket Box',
@@ -1333,6 +1391,7 @@ const products = [
     wholesaleLC: 244.22,
     costPlusGST: 280.85,
     retailRounded: 510.00,
+    keywords: 'Blanket Box Cabinet Rooms Bedroom Beds Bed 900 450 440 Solid Timber Wood Paris Furniture',
   },
 
 ]

@@ -27,6 +27,7 @@ const ProductEditScreen = () => {
   const [homeSpace, setHomeSpace] = useState("");
   const [code, setCode] = useState("");
   const [style, setStyle] = useState("");
+  const [keywords, setKeywords] = useState("");
 
   const {
     data: product,
@@ -59,6 +60,7 @@ const ProductEditScreen = () => {
       setHomeSpace(product.homeSpace || "");
       setCode(product.code || "");
       setStyle(product.style || "");
+      setKeywords(product.keywords || "");
     }
   }, [product]);
 
@@ -80,6 +82,7 @@ const ProductEditScreen = () => {
       homeSpace,
       code,
       style,
+      keywords,
     };
 
     const result = await updateProduct(updatedProduct);
@@ -242,6 +245,15 @@ const ProductEditScreen = () => {
                 placeholder="Enter material"
                 value={style}
                 onChange={(e) => setStyle(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+            <Form.Group controlId="style" className="my-2">
+              <Form.Label>Keywords</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter keywords"
+                value={keywords}
+                onChange={(e) => setKeywords(e.target.value)}
               ></Form.Control>
             </Form.Group>
             <Button type="submit" variant="primary" className="my-2">

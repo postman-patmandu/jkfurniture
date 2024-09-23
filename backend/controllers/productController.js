@@ -8,7 +8,7 @@ const getProducts = asyncHandler(async (req, res) => {
     const pageSize = process.env.PAGINATION_LIMIT;
     const page = Number(req.query.pageNumber) || 1;
 
-    const keyword = req.query.keyword ? { name: { $regex: req.query.keyword, $options: 'i' } } : {};
+    const keyword = req.query.keyword ? { keywords: { $regex: req.query.keyword, $options: 'i' } } : {};
 
     const count = await Product.countDocuments({...keyword});
 
@@ -54,6 +54,7 @@ const createProduct = asyncHandler(async (req, res) => {
         homeSpace: 'Sample home space',
         code: 'Sample code',
         style: 'Sample style',
+        keywords: 'Sample keywords',
      })
 
      const createdProduct = await product.save();
@@ -80,6 +81,7 @@ const updateProduct = asyncHandler(async (req, res) => {
         homeSpace,
         code,
         style,
+        keywords,
      } = req.body;
 
      const product = await Product.findById(req.params.id);
@@ -100,6 +102,7 @@ const updateProduct = asyncHandler(async (req, res) => {
         product.homeSpace = homeSpace;
         product.code = code;
         product.style = style;
+        product.keywords = keywords;
 
         const updatedProduct = await product.save();
         res.json(updateProduct);

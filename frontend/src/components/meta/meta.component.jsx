@@ -11,7 +11,7 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-    title: 'Welcome to JFurniture',
+    title: 'Welcome to Furniture Shop',
     description: 'We sell quality home furniture',
     keywords: 'Furniture, Dining, Bedroom, Beds, Tables, Cabinets, Coffee Tables',
 };
