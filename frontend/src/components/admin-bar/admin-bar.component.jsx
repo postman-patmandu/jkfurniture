@@ -25,15 +25,15 @@ const AdminBar = () => {
   }
   return (
     <div className='top-bar-container d-flex'>
-        <div className="container d-flex admin-bar py-2">
-            <Col className="">
+        <div className="container d-flex admin-bar py-2 flex-wrap justify-content-between">
+            <Col className="" sm={6}>
                 <a href="mailto:&#102;&#117;&#114;&#110;&#105;&#116;&#117;&#114;&#101;&#115;&#104;&#111;&#112;&#110;&#122;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
                 &#102;&#117;&#114;&#110;&#105;&#116;&#117;&#114;&#101;&#115;&#104;&#111;&#112;&#110;&#122;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
                 </a>
             </Col>
-            <Col className="d-flex justify-content-end">
+            <Col className="d-flex justify-content-end" sm={3}>
             { userInfo ? (
-                <NavDropdown title={userInfo.name} id='username' className="mx-4">
+                <NavDropdown title={userInfo.name} id='username' className="me-4">
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>Profile</NavDropdown.Item>
                   </LinkContainer>

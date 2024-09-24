@@ -94,7 +94,7 @@ const createStripeSession = asyncHandler(async (req, res) => {
     line_items: line_items,
     mode: "payment",
     success_url: "https://www.furnitureshop.nz/success?session_id={CHECKOUT_SESSION_ID}",
-    cancel_url: "http://https://www.furnitureshop.nz"
+    cancel_url: "https://www.furnitureshop.nz"
   });
 
   res.json({id:session.id});

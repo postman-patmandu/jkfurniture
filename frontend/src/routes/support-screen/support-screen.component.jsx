@@ -3,93 +3,52 @@ import React from 'react'
 const SupportScreen = () => {
   return (
     <div>
-        <h3 className='mt-5'>Terms &amp; Conditions for Furniture Shop</h3>
-        <p><strong>Effective Date:</strong> 21 September 2024</p>
-        <p>Welcome to Furniture Shop. These Terms &amp; Conditions ("Terms") govern your use of our website and the purchase of products from our online store. By accessing or using our website, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use our website or services.</p>
-        <h3 className='mt-5'>1. <strong>Use of the Website</strong></h3>
+        <h3 className='mt-4'>Customer Support for Furniture Shop</h3>
+        <p>At Furniture Shop, we are committed to providing exceptional customer service to ensure a smooth and satisfying shopping experience. Below, you’ll find answers to frequently asked questions, support resources, and how to contact us for assistance.</p>
+        <hr />
+        <h3>1. <strong>Frequently Asked Questions (FAQs)</strong></h3>
+        <h4><strong>Ordering</strong></h4>
+        <p><strong>Q: How do I place an order?</strong><br />A: Simply browse our website, add your desired products to your cart, and proceed to checkout. Follow the prompts to enter your shipping and payment information, and confirm your order.</p>
+        <p><strong>Q: Can I make changes to my order after it’s placed?</strong><br />A: We process orders quickly, but if you need to make changes, contact us as soon as possible at furnitureshopnz@gmail.com or call John Hawke on 021 804 922. We’ll do our best to accommodate your request.</p>
+        <p><strong>Q: How do I track my order?</strong><br />A: Once your order ships, we’ll send you a confirmation email with a tracking number. You can also track your order by logging into your account.</p>
+        <hr />
+        <h4 id="#shipping"><strong>Shipping &amp; Delivery</strong></h4>
+        <p><strong>Q: How long does delivery take?</strong><br />A: Delivery times vary based on your location and the product ordered. Typical delivery times are between 3-7 business days.</p>
+        <p><strong>Q: What are the shipping costs?</strong><br />A: Shipping costs are calculated based on the delivery location and the size/weight of your items. Price of item already includes shipping fees.</p>
+        <p><strong>Q: Do you offer international shipping?</strong><br />A: At this time, we ship nation wide. We do not offer international shipping.</p>
+        <hr />
+        <h4 id="returns"><strong>Returns &amp; Exchanges</strong></h4>
+        <p><strong>Q: What is your return policy?</strong><br />A: We accept returns of eligible products within 15 days of delivery. Items must be in their original condition and packaging.</p>
+        <p><strong>Q: How do I initiate a return?</strong><br />A: To start a return, contact our customer support team at furnitureshopnz@gmail.com or call John Hawke on 021 804 922. We’ll provide instructions on how to return your item and any applicable shipping costs.</p>
+        <p><strong>Q: When will I receive my refund?</strong><br />A: Refunds will be processed once the returned item has been received and inspected. It typically takes 5-10 business days for the refund to appear in your account.</p>
+        <hr />
+        <h4><strong>Product Information</strong></h4>
+        <p><strong>Q: Are the colors and materials of the products exactly as shown online?</strong><br />A: We strive to accurately represent all products, but due to variations in screens and natural materials, slight differences in color and texture may occur.</p>
+        <p><strong>Q: Do you offer assembly services?</strong><br />A: Many of our products require assembly, and we provide detailed instructions with each item. We also offer assembly services for select items. Check the product page or contact us for more information.</p>
+        <p><strong>Q: How can I care for my furniture?</strong><br />A: For maintenance tips and care instructions, refer to the product descriptions or contact our support team. Proper care will ensure the longevity of your furniture.</p>
+        <hr />
+        <h3>2. <strong>Contact Customer Support</strong></h3>
+        <p>If you have questions or need assistance, our customer support team is ready to help. We aim to respond to all inquiries within 24 hours.</p>
         <ul>
-            <li>
-                <p><strong>Eligibility</strong>: You must be at least 18 years old to make a purchase or use any of the services provided on our website. By using our site, you confirm that you meet this eligibility requirement.</p>
-            </li>
-            <li>
-                <p><strong>Account Registration</strong>: Some features may require you to create an account. You are responsible for maintaining the confidentiality of your account information, and you agree to notify us immediately of any unauthorized use of your account.</p>
-            </li>
-            <li>
-                <p><strong>Accuracy of Information</strong>: You agree to provide accurate, current, and complete information during registration or when placing an order. Furniture Shop is not responsible for any errors or delays caused by inaccurate information provided by you.</p>
-            </li>
+            <li><strong>Email</strong>: furnitureshopnz@gmail.com</li>
+            <li><strong>Phone</strong>: 021 804 922 (Monday – Friday, 9am-5pm)</li>
         </ul>
-        <h3 className='mt-5'>2. <strong>Orders and Payment</strong></h3>
-        <ul>
-            <li>
-                <p><strong>Product Availability</strong>: All orders are subject to product availability. We reserve the right to limit quantities or discontinue products without notice, even after an order has been placed.</p>
-            </li>
-            <li>
-                <p><strong>Pricing</strong>: Prices for our products are listed on the website and are subject to change without notice. Once you place an order, the price will be confirmed at checkout.</p>
-            </li>
-            <li>
-                <p><strong>Payment Methods</strong>: We accept major credit cards, debit cards, and other payment methods as indicated on our website. By submitting an order, you authorize us to charge your selected payment method for the full purchase amount.</p>
-            </li>
-            <li>
-                <p><strong>Order Confirmation</strong>: After placing an order, you will receive an email confirmation. If we are unable to fulfill your order for any reason, we will notify you and issue a full refund.</p>
-            </li>
-        </ul>
-        <h3 className='mt-5'>3. <strong>Shipping and Delivery</strong></h3>
-        <ul>
-            <li>
-                <p><strong>Shipping Terms</strong>: We will provide you with shipping options at checkout. Delivery times are estimates and may vary depending on location, product availability, and shipping carrier performance.</p>
-            </li>
-            <li>
-                <p><strong>Shipping Charges</strong>: Shipping fees are calculated based on the delivery address, size, and weight of the product. These fees will be displayed at checkout before completing your purchase.</p>
-            </li>
-            <li>
-                <p><strong>Title and Risk of Loss</strong>: Title and risk of loss for all products pass to you upon delivery to the shipping carrier.</p>
-            </li>
-        </ul>
-        <h3 className='mt-5'>4. <strong>Returns and Refunds</strong></h3>
-        <ul>
-            <li>
-                <p><strong>Return Policy</strong>: If you are not satisfied with your purchase, you may return eligible products within 30 days of delivery for a refund, subject to our return policy. Items must be returned in their original condition and packaging.</p>
-            </li>
-            <li>
-                <p><strong>Non-Returnable Items</strong>: Custom or personalized products, clearance items, and products marked as non-returnable cannot be returned for a refund.</p>
-            </li>
-            <li>
-                <p><strong>Refund Process</strong>: Refunds will be issued to your original payment method once the returned product has been received and inspected. You are responsible for return shipping costs unless the product is defective or damaged.</p>
-            </li>
-        </ul>
-        <h3 className='mt-5'>5. <strong>Warranties and Disclaimers</strong></h3>
-        <ul>
-            <li>
-                <p><strong>Product Descriptions</strong>: We strive to ensure that product descriptions, images, and other details are accurate. However, we do not guarantee that all information on the website is error-free, complete, or current.</p>
-            </li>
-            <li>
-                <p><strong>Limited Warranty</strong>: Products may come with a limited warranty as specified in their description. Warranty claims must be made in accordance with the manufacturer's guidelines. We disclaim all other warranties, express or implied, including any implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
-            </li>
-        </ul>
-        <h3 className='mt-5'>6. <strong>Intellectual Property</strong></h3>
-        <ul>
-            <li>
-                <p><strong>Ownership</strong>: All content on this website, including text, images, logos, and software, is the property of Furniture Shop or our licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any content from our website without our prior written consent.</p>
-            </li>
-            <li>
-                <p><strong>User-Generated Content</strong>: If you submit reviews, comments, or other content to our website, you grant us a non-exclusive, royalty-free, perpetual, and fully transferable license to use, modify, and publish that content in any form.</p>
-            </li>
-        </ul>
-        <h3 className='mt-5'>7. <strong>Limitation of Liability</strong></h3>
-        <p>To the fullest extent permitted by law, Furniture Shop and its affiliates will not be liable for any indirect, incidental, special, or consequential damages arising from the use of our website, products, or services, even if we have been advised of the possibility of such damages. Our liability is limited to the amount you paid for the product in question.</p>
-        <h3 className='mt-5'>8. <strong>Indemnification</strong></h3>
-        <p>You agree to indemnify and hold Furniture Shop and its affiliates harmless from any claims, liabilities, damages, expenses, and costs (including reasonable attorney fees) arising from your use of our website, violation of these Terms, or infringement of any intellectual property or other rights of third parties.</p>
-        <h3 className='mt-5'>9. <strong>Termination</strong></h3>
-        <p>We reserve the right to suspend or terminate your account or access to our website at any time, for any reason, including but not limited to violation of these Terms, without prior notice.</p>
-        <h3 className='mt-5'>10. <strong>Governing Law</strong></h3>
-        <p>These Terms are governed by and construed in accordance with the laws of New Zealand, without regard to its conflict of law principles. Any disputes arising under these Terms will be subject to the exclusive jurisdiction of the courts in New Zealand.</p>
-        <h3 className='mt-5'>11. <strong>Changes to Terms &amp; Conditions</strong></h3>
-        <p>We may modify these Terms at any time, and the updated version will be posted on our website with the new effective date. Your continued use of the website after any changes indicates your acceptance of the updated Terms.</p>
-        <h3 className='mt-5'>12. <strong>Contact Information</strong></h3>
-        <p>If you have any questions or concerns about these Terms &amp; Conditions, please contact us at:</p>
-        <p>Furniture Shop<br />Email: support@furnitureshop.nz<br />Phone: 027 524 1211<br /></p>
-        <br />
-        <p>By using our website and purchasing products from us, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.</p>
+        <hr />
+        <h3>3. <strong>Warranty &amp; Repairs</strong></h3>
+        <p><strong>Q: Do your products come with a warranty?</strong><br />A: Yes, many of our products come with a manufacturer’s warranty. The warranty coverage is typically specified in the product description. If you believe your product is defective, please contact us for further assistance.</p>
+        <p><strong>Q: Can I request a replacement part or repair service?</strong><br />A: If your item arrives damaged or you need replacement parts, contact us at furnitureshopnz@gmail.com or call John Hawke on 021 804 922. We’ll assist with getting your product repaired or replaced.</p>
+        <hr />
+        <h3>4. <strong>Account &amp; Billing</strong></h3>
+        <p><strong>Q: How do I create an account?</strong><br />A: To create an account, click the "Sign Up" button on our website, and enter your information. Having an account allows you to track orders, save your favorite items, and manage your details.</p>
+        {/* <p><strong>Q: How do I reset my password?</strong><br />A: If you forget your password, click “Forgot Password” on the login page, and follow the instructions to reset it.</p> */}
+        <p><strong>Q: What payment methods do you accept?</strong><br />A: We accept major credit cards, debit cards, and other payment options such as Apple Pay. Payment is processed securely at checkout.</p>
+        <hr />
+        <h3>5. <strong>Special Offers &amp; Promotions</strong></h3>
+        <p><strong>Q: How can I find out about sales and special promotions?</strong><br />A: Sign up for our newsletter or follow us on social media to stay updated on our latest offers, sales, and new product arrivals.</p>
+        <p><strong>Q: Can I use more than one discount code?</strong><br />A: Only one discount code can be applied per order. However, we frequently offer promotions and sales, so check back regularly.</p>
+        <hr />
+        <p>We’re here to make your shopping experience as enjoyable as possible. If you have any other questions or need further assistance, please don’t hesitate to reach out to us.</p>
+        <p>Thank you for shopping with Furniture Shop!</p>
     </div>
   )
 }
