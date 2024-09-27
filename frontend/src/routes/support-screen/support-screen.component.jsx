@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollTop from '../../utils/scroll-top.utils';
 
 const SupportScreen = () => {
   return (
@@ -49,6 +50,7 @@ const SupportScreen = () => {
         <hr />
         <p>We’re here to make your shopping experience as enjoyable as possible. If you have any other questions or need further assistance, please don’t hesitate to reach out to us.</p>
         <p>Thank you for shopping with Furniture Shop!</p>
+        <ScrollTop />
     </div>
   )
 }

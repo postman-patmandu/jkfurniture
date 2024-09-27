@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import ScrollTop from '../../utils/scroll-top.utils';
 
 const TermsScreen = () => {
   return (
@@ -90,6 +91,7 @@ const TermsScreen = () => {
         <p>Furniture Shop<br />Email: support@furnitureshop.nz<br />Phone: 027 524 1211</p>
         <hr />
         <p>By using our website and purchasing products from us, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.</p>
+        <ScrollTop />
     </div>
   )
 }

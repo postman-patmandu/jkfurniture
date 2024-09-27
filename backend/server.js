@@ -10,6 +10,7 @@ import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import stripeRoutes from './routes/stripeRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import emailRoutes from './routes/emailRoutes.js';
 
 const port = process.env.PORT || 5000;
 
@@ -29,6 +30,7 @@ app.use(cookieParser());
  app.use('/api/orders', orderRoutes);
  app.use('/api/stripe', stripeRoutes);
  app.use('/api/upload', uploadRoutes);
+ app.use('/api/contact', emailRoutes);
 
  app.get('./api/config/paypal', (req, res) => res.send({ clientId: process.env.PAYPAL_CLIENT_ID }));
 

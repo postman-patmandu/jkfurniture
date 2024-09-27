@@ -22,7 +22,9 @@ const emailReceipt = (req, res) => {
   next();
 };
 
-const sendFurnitureEmail = asyncHandler(async({ email }) => {
+const sendEmail = asyncHandler(async (req, res, next) => {
+    const { firstName, lastName, email, phone, message } = req.body;
+    console.log('Email is ready to send!', email, );
     // const { nodemailer } = nodemailer();
     // - Create NodeMailer TRANSPORT INFO
     const transporter = nodemailer.createTransport({
@@ -57,7 +59,7 @@ const sendFurnitureEmail = asyncHandler(async({ email }) => {
         transporter.verify(function (error, success) {
             if (error) {
               console.log(error);
-            } else {
+            } else if(success) {
               console.log("Server is ready to take our messages");
             }
           });
@@ -67,6 +69,9 @@ const sendFurnitureEmail = asyncHandler(async({ email }) => {
             <div>
                 <p>Hi! <strong>${email}</strong></p>
                 <p>Thank you for your purchase at Furniture Shop</p>
+                <p>${message}</p>
+                <p>From: ${firstName} ${lastName}</p>
+                <p>From: ${phone}</p>
             </div>
             <div>
                 <p>Sincerely,<br /><strong>John Hawke</strong></p>
@@ -75,16 +80,27 @@ const sendFurnitureEmail = asyncHandler(async({ email }) => {
 
         // - Create All of email
         let mailOptions = {
-            from: `Furniture Shop Orders <${SENDER_EMAIL}>`,
-            to: email,
-            subject: `[Your Order]`,
+            from: `Furniture Shop Orders <${email}>`,
+            to: SENDER_EMAIL,
+            subject: `[Furniture Shop Product Enquiry]`,
             html: mailBody
         };
 
         // Send email
-        return await transporter.sendMail(mailOptions)
-        .then(success => 'Successful!')
-        .catch(err => 'Unsuccessful!');
+        return await transporter.sendMail(mailOptions, function(error, info) {
+            if (error) {
+                console.log("error is "+error);
+                res.status(500).send({success: false, message: 'Email Not Sent! '});
+                // resolve(false); // or use rejcet(false) but then you will have to handle errors
+            } 
+           else {
+               console.log('Email sent: ' + info.response);
+               res.status(200).send({success: true, message: 'Email Sent!'});
+            //    resolve(true);
+            }
+        });
+        // .then(success => 'Successful!')
+        // .catch(err => 'Unsuccessful!');
 });
 
-export { sendFurnitureEmail };
+export { sendEmail };

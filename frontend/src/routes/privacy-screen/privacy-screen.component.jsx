@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollTop from '../../utils/scroll-top.utils';
 
 const PrivacyScreen = () => {
   return (
@@ -80,6 +81,7 @@ const PrivacyScreen = () => {
         <p>Furniture Shop<br />Email: support@furnitureshop.nz<br />Phone: 027 524 1211</p>
         <hr />
         <p>By using our website and services, you agree to the collection and use of your information in accordance with this Privacy Policy.</p>
+        <ScrollTop />
     </div>
   )
 }

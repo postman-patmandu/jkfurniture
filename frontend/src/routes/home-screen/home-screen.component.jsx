@@ -6,12 +6,16 @@ import Message from "../../components/message/message.component";
 import Paginate from "../../components/paginate/paginate.component";
 import ProductCarousel from "../../components/product-carousel/product-carousel.component";
 import ProductCategories from "../../components/product-categories/product-categories.component";
+import Headings from "../../components/headings/headings.component";
+import ScrollTop from "../../utils/scroll-top.utils";
 import Meta from "../../components/meta/meta.component";
 import { useGetProductsQuery } from "../../slices/products-api-slice.component";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
   const { data, isLoading, error } = useGetProductsQuery({ keyword, pageNumber });
+  const headline = 'Latest\nProducts';
+  const headlineTag = 'Selection';
   return (
     <>
       {!keyword ? ( 
@@ -28,8 +32,7 @@ const HomeScreen = () => {
         <>
           <Meta />
           <ProductCategories />
-          <h1 className="headline mt-6 mb-5">Latest <br/>Products</h1>
-          <h2 className="headline-tag">Selection</h2>
+          <Headings headline={headline} headlineTag={headlineTag} />
           <Row>
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
@@ -42,7 +45,8 @@ const HomeScreen = () => {
             page={data.page}
             keyword={keyword ? keyword : ''}
             />
-
+            
+            <ScrollTop />
            
         </>
       )}

@@ -25,6 +25,7 @@ import {
   useCreateReviewMutation,
 } from "../../slices/products-api-slice.component";
 import { addToCart } from "../../slices/cart-slice.component";
+import ScrollTop from "../../utils/scroll-top.utils";
 import ProductCategories from "../../components/product-categories/product-categories.component";
 
 // import products from '../../products';
@@ -312,6 +313,7 @@ const ProductScreen = () => {
           </Row>
         </>
       )}
+      <ScrollTop />
     </>
   );
 };
