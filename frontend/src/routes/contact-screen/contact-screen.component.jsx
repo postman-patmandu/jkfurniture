@@ -77,7 +77,7 @@ const ContactScreen = () => {
                     <Form.Label>First name</Form.Label>
                     <Form.Control
                       type="text"
-                      name="firstName"
+                      // name="firstName"
                       placeholder="Enter first name"
                       required
                       value={firstName}
@@ -93,7 +93,7 @@ const ContactScreen = () => {
                     <Form.Label>Last name</Form.Label>
                     <Form.Control
                       type="text"
-                      name="lastName"
+                      // name="lastName"
                       placeholder="Enter last name"
                       required
                       value={lastName}
@@ -107,7 +107,7 @@ const ContactScreen = () => {
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
                   type="email"
-                  name="email"
+                  // name="email"
                   placeholder="Enter email"
                   required
                   value={email}
@@ -118,7 +118,7 @@ const ContactScreen = () => {
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
                   type="text"
-                  name="phone"
+                  // name="phone"
                   placeholder="Enter Phone Number"
                   required
                   value={phone}
@@ -129,7 +129,7 @@ const ContactScreen = () => {
                 <Form.Label>Message</Form.Label>
                 <Form.Control
                   type="text"
-                  name="messsage"
+                  // name="messsage"
                   placeholder="Enter a message"
                   required
                   value={message}
