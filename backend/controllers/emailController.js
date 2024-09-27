@@ -80,7 +80,7 @@ const sendEmail = asyncHandler(async (req, res, next) => {
 
         // - Create All of email
         let mailOptions = {
-            from: `Furniture Shop Orders <${email}>`,
+            from: `Furniture Shop Orders <${SENDER_EMAIL}>`,
             to: SENDER_EMAIL,
             subject: `[Furniture Shop Product Enquiry]`,
             html: mailBody
