@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Headings from '../../components/headings/headings.component';
 import { Row, Col, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import {  useNavigate, Link } from 'react-router-dom';
 
 const ContactScreen = () => {
   const headline = 'Talk\n with us';
@@ -11,26 +11,37 @@ const ContactScreen = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage]= useState("");
+  const [isPending, setIsPending] = useState("");
+
+  const navigate = useNavigate();
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    console.log(email, firstName, lastName, phone, message);
+    console.log(email, "Foo Foo", firstName, lastName, phone, message);
 
     const data = {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      phone: phone,
-      message: message
+      firstName,
+      lastName,
+      email,
+      phone,
+      message
     }
 
-    const response = fetch(`/api/contact/send`, {
+    setIsPending(true);
+
+    fetch(`/api/contact/send`, {
       method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
+    })
+    .then(() => {
+      console.log("Email is being sent!");
+      setIsPending(false);
+      navigate('/');
     });
 
     // const response = await fetch(request);
-    console.log(response.status);
+    
   }
 
   return (
@@ -137,7 +148,8 @@ const ContactScreen = () => {
                 />
               </Form.Group>
               
-              <button type="submit" class="btn btn-primary btn-block mb-4 w-100">Send</button>
+              { !isPending && <button type="submit" class="btn btn-primary btn-block mb-4 w-100">Send</button> }
+              { isPending && <button type="submit" disabled class="btn btn-primary btn-block mb-4 w-100">Sending Email...</button> }
 
             </Form>
           </Col>

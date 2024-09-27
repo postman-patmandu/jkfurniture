@@ -154,6 +154,10 @@ h1.headline pre {
   color: #fff;
 }
 
+.contact-us {
+  padding-right: 5rem;
+}
+
 .contact-us a {
   text-decoration: none;
 }

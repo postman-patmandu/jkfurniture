@@ -67,11 +67,11 @@ const sendEmail = asyncHandler(async (req, res, next) => {
         // Create body of email
         let mailBody = `
             <div>
-                <p>Hi! <strong>${email}</strong></p>
-                <p>Thank you for your purchase at Furniture Shop</p>
+                <p>Hi! <strong>John</strong></p>
                 <p>${message}</p>
                 <p>From: ${firstName} ${lastName}</p>
-                <p>From: ${phone}</p>
+                <p>Phone: ${phone}</p>
+                <p>Email: ${email}</p>
             </div>
             <div>
                 <p>Sincerely,<br /><strong>John Hawke</strong></p>

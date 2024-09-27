@@ -8,7 +8,7 @@ import { logout } from "../../slices/auth-slice.component";
 import SearchBox from "../search-box/search-box.component";
 import logo from "../../assets/logo.png";
 import { resetCart } from "../../slices/cart-slice.component";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate, Link } from "react-router-dom";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -71,7 +71,10 @@ const Header = () => {
             <a href="/" onClick={menuLink} data-link="table" className="inline-block me-2 nav-link active">Living Room</a>
             <a href="/" onClick={menuLink} data-link="bed" className="inline-block me-2 nav-link active">Bedroom</a>
             <a href="/" onClick={menuLink} data-link="display" className="inline-block me-2 nav-link active">Display Units</a>
-            <a href="/" onClick={menuLink} data-link="chair" className="inline-block me-2 nav-link active">Chairs</a>
+            <Link className="inline-block me-2 nav-link active" to="/contact">
+              Contact
+            </Link>
+            {/* <a href="/" onClick={menuLink} data-link="chair" className="inline-block me-2 nav-link active">Chairs</a> */}
               {/* <LinkContainer to="/profile">
                 <Nav.Link className="inline-block me-2">Living Room</Nav.Link>
               </LinkContainer>
