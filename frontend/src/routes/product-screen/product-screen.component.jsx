@@ -15,23 +15,24 @@ import { useDispatch, useSelector } from "react-redux";
 import Rating from "../../components/rating/rating.component";
 import Loader from "../../components/loader/loader.component";
 import Product from "../../components/product/product.component";
-import Paginate from "../../components/paginate/paginate.component";
 import Message from "../../components/message/message.component";
 import { toast } from "react-toastify";
 import Meta from "../../components/meta/meta.component";
 import {
-  useGetTopProductsQuery,
+  useGetSelectedProductsQuery,
   useGetProductDetailsQuery,
   useCreateReviewMutation,
 } from "../../slices/products-api-slice.component";
 import { addToCart } from "../../slices/cart-slice.component";
 import ScrollTop from "../../utils/scroll-top.utils";
-import ProductCategories from "../../components/product-categories/product-categories.component";
+import Headings from "../../components/headings/headings.component";
 
 // import products from '../../products';
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
+  const headline = 'You\nMay Also';
+  const headlineTag = 'Like';
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const ProductScreen = () => {
   const [comment, setComment] = useState("");
 
   const { pageNumber, keyword } = useParams();
-  const { data: products, isLoadingData } = useGetTopProductsQuery();
+  const { data: products, isLoadingData } = useGetSelectedProductsQuery();
 
   const {
     data: product,
@@ -60,7 +61,10 @@ const ProductScreen = () => {
     navigate("/cart");
   };
 
+  console.log('Products: ', products);
+
   // const product = products.find((p) => p._id === productId);
+  // const stockCount = [...Array(product.countInStock).keys()];
   const submitHandler = async (e) => {
     e.preventDefault();
 
@@ -81,6 +85,7 @@ const ProductScreen = () => {
 
   return (
     <>
+    
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
@@ -146,7 +151,7 @@ const ProductScreen = () => {
                         value={qty}
                         onChange={(e) => setQty(Number(e.target.value))}
                       >
-                        {[...Array(product.countInStock).keys()].map(
+                        {!isLoading && [...Array(product.countInStock).keys()].map(
                           (x) => (
                             <option key={x + 1} value={x + 1}>
                               {x + 1}
@@ -301,9 +306,8 @@ const ProductScreen = () => {
           </Row>
           {/* <Row><ProductCategories /></Row> */}
           <Row>
-            <h1 className="headline mt-5 mb-5">Top Products</h1>
-            <h2 className="headline-tag">Selection</h2>
-            {isLoadingData ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
+          <Headings headline={headline} headlineTag={headlineTag} />
+            {isLoadingData || typeof products === 'undefined' ? ( <Loader /> ) : error ? ( <Message variant='danger'>{error}</Message> )
              : (
             products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>

@@ -7,7 +7,7 @@ import Stock from '../stock/stock.component';
 const Product = ({ product }) => {
     const productHref = `/product/${product._id}`;
   return (
-    <Card className='my-3 rounded position-relative'>
+    <Card className='my-3 rounded position-relative align-items-stretch'>
         
         <Link to={productHref}>
             <Card.Img src={product.image} variant='top' />

@@ -67,13 +67,23 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
             <Nav className="ms-auto flex-wrap">
-            <a href="/" onClick={menuLink} data-link="dining" className="inline-block me-2 nav-link active">Dining Room</a>
+              <Link className='inline-block me-2 nav-link active' to={`/dining/dining`}>
+                Dining Room
+              </Link>
+              <Link className='inline-block me-2 nav-link active' to={`/living/living`}>
+                Living Room
+              </Link>
+              <Link className='inline-block me-2 nav-link active' to={`/bedroom/bedroom`}>
+                Bedroom
+              </Link>
+              <Link className="inline-block me-2 nav-link active" to="/contact">
+                Contact
+              </Link>
+              {/* <a href="/" onClick={menuLink} data-link="dining" className="inline-block me-2 nav-link active">Dining Room</a>
             <a href="/" onClick={menuLink} data-link="table" className="inline-block me-2 nav-link active">Living Room</a>
             <a href="/" onClick={menuLink} data-link="bed" className="inline-block me-2 nav-link active">Bedroom</a>
-            <a href="/" onClick={menuLink} data-link="display" className="inline-block me-2 nav-link active">Display Units</a>
-            <Link className="inline-block me-2 nav-link active" to="/contact">
-              Contact
-            </Link>
+            <a href="/" onClick={menuLink} data-link="display" className="inline-block me-2 nav-link active">Display Units</a> */}
+            
             {/* <a href="/" onClick={menuLink} data-link="chair" className="inline-block me-2 nav-link active">Chairs</a> */}
               {/* <LinkContainer to="/profile">
                 <Nav.Link className="inline-block me-2">Living Room</Nav.Link>

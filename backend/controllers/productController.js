@@ -177,8 +177,33 @@ const createProductReview = asyncHandler(async (req, res) => {
 // @route   GET /api/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({"homeSpace": "Bedroom"}).sort({ rating: -1 }).limit(4);
+  // const keyword = req.query.keyword;
+  
+  console.log("Keys: ", req.query.keyword);
+  const keyword = req.query.keyword ? { keywords: { $regex: req.query.keyword, $options: 'i' } } : {};
+  const products = await Product.find({...keyword}).sort({}).limit();
   res.status(200).json(products);
 });
 
-export { getProducts, getProductById, createProduct, updateProduct, deleteProduct, createProductReview, getTopProducts }
+// @desc    Get selected products
+// @route   GET /api/products/selected
+// @access  Public
+const getSelectedProducts = asyncHandler(async (req, res) => {
+  // const keyword = req.query.keyword;
+  
+  console.log("Selected: ", req.query.keyword);
+  const keyword = req.query.keyword ? { keywords: { $regex: req.query.keyword, $options: 'i' } } : {};
+  const products = await Product.find({...keyword}).sort({}).limit(4);
+  res.status(200).json(products);
+});
+
+export {
+  getProducts,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+  createProductReview,
+  getTopProducts,
+  getSelectedProducts,
+};

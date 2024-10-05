@@ -57,9 +57,23 @@ export const productsApiSlice = apiSlice.injectEndpoints({
             invalidatesTags: ['Product'],
         }),
         getTopProducts: builder.query({
-            query: () => ({
+            query: ( keyword ) => ({
                 url: `${PRODUCTS_URL}/top`,
+                params: {
+                    keyword,
+                },
             }),
+            providesTags: ['Products'],
+            keepUnusedDataFor: 5,
+        }),
+        getSelectedProducts: builder.query({
+            query: ( keyword ) => ({
+                url: `${PRODUCTS_URL}/selected`,
+                params: {
+                    keyword,
+                },
+            }),
+            providesTags: ['Products'],
             keepUnusedDataFor: 5,
         }),
     }),
@@ -74,4 +88,5 @@ export const {
   useDeleteProductMutation,
   useCreateReviewMutation,
   useGetTopProductsQuery,
+  useGetSelectedProductsQuery,
 } = productsApiSlice;

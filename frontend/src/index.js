@@ -32,6 +32,9 @@ import PrivacyScreen from './routes/privacy-screen/privacy-screen.component';
 import SupportScreen from './routes/support-screen/support-screen.component';
 import TermsScreen from './routes/terms-screen/terms-screen.component';
 import ContactScreen from './routes/contact-screen/contact-screen.component';
+import LivingRoomScreen from './routes/living-room-screen/living-room-screen.component';
+import DiningRoomScreen from './routes/dining-room-screen/dining-room-screen.component';
+import BedroomScreen from './routes/bedroom-screen/bedroom-screen.component';
 import OrderListScreen from './routes/admin/order-list-screen/order-list-screen.component';
 import ProductListScreen from './routes/admin/product-list-screen/product-list-screen.component';
 import ProductEditScreen from './routes/admin/product-edit-screen/product-edit-screen.component';
@@ -46,6 +49,9 @@ const router = createBrowserRouter(
       <Route path='/page/:pageNumber' element={<HomeScreen />} />
       <Route path='/search/:keyword/page/:pageNumber' element={<HomeScreen />} />
       <Route path='/product/:id' element={<ProductScreen />} />
+      <Route path='/living/:keyword/' element={<LivingRoomScreen />} />
+      <Route path='/dining/:keyword/' element={<DiningRoomScreen />} />
+      <Route path='/bedroom/:keyword/' element={<BedroomScreen />} />
       <Route path='/cart' element={<CartScreen />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
