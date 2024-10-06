@@ -1,8 +1,5 @@
 import { Card, CardBody } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Rating from '../rating/rating.component';
-import StockBadge from '../stock-badge/stock-badge.component';
-import Stock from '../stock/stock.component';
 
 const ProductFilter = ({ product }) => {
     const productHref = `/product/${product._id}`;

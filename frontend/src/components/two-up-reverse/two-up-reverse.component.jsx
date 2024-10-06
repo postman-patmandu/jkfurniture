@@ -1,8 +1,7 @@
 import { Row, Col } from "react-bootstrap";
-import industrialImage from "../../assets/industrial-bedroom-image.jpg";
 
 const TwoUpReverse = ({ content }) => {
-  const {title, text, link} = content;
+  const {title, text, img, link} = content;
   return (
     <Row className="two-up-reverse">
         <Col sm={12} md={6} lg={7}>
@@ -15,7 +14,7 @@ const TwoUpReverse = ({ content }) => {
         </div>
         </Col>
         <Col className="two-up-image" sm={12} md={6} lg={5}>
-            <img src={industrialImage} alt="Industrial Bedroom Furniture" />
+            <img src={img} alt="Industrial Bedroom Furniture" />
         </Col>
     </Row>
   )

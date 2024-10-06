@@ -7,9 +7,9 @@ const StyleTips = () => {
       <Row className="justify-content-center">
         <Col sm={12} md={9}>
           <h1>Mixing Modern & Rustic Furniture</h1>
-          <div className="style-box">
+          <div className="style-tagline-box">
             <p>
-              Here are some styling tips for mixing modern and rustic furniture
+              Here are some handy styling tips for mixing modern and rustic furniture
               across the bedroom, dining, and living rooms:
             </p>
           </div>
@@ -24,6 +24,17 @@ const StyleTips = () => {
               <strong>Neutral Palette:</strong> Stick to neutral tones like
               whites, grays, and earth tones. Rustic wood adds warmth, while
               modern pieces bring clean lines.
+            </li>
+            <li>
+              <div className="style-box">
+                <p>
+                  Use a neutral color palette to unify both styles, allowing
+                  natural wood tones to stand out. Incorporate soft
+                  textiles—like throws or rugs—to add warmth. Finally, focus on
+                  simplicity in accessories to maintain harmony without
+                  overwhelming the space.
+                </p>
+              </div>
             </li>
             <li>
               <strong>Statement Lighting:</strong> Choose modern pendant lights
@@ -42,15 +53,17 @@ const StyleTips = () => {
               <strong>Contrasting Furniture:</strong> Pair a rustic coffee table
               with a modern, sleek sofa. Choose industrial-style modern metal or
               glass shelves to contrast with distressed wood furniture.
-              <img
-                src={parisLvingRoom}
-                alt="Paris Living Room, TV stand, Display Unit, Hall Table"
-              />
             </li>
             <li>
               <strong>Mix Modern Art and Rustic Finishes:</strong> Frame modern
               artwork in a room featuring rustic wood walls or use modern
               sculptures alongside reclaimed wood accents.
+            </li>
+            <li>
+            <img
+                src={parisLvingRoom}
+                alt="Paris Living Room, TV stand, Display Unit, Hall Table"
+              />
             </li>
             <li>
               <strong>Balance Soft and Hard:</strong> Incorporate plush, modern
@@ -69,17 +82,6 @@ const StyleTips = () => {
               <strong>Blend Tables and Chairs:</strong> Pair a large rustic
               wooden dining table with modern chairs. Metal or acrylic seating
               brings an industrial or contemporary touch to balance the wood.
-            </li>
-            <li>
-              <div className="style-box">
-                <p>
-                  Use a neutral color palette to unify both styles, allowing
-                  natural wood tones to stand out. Incorporate soft
-                  textiles—like throws or rugs—to add warmth. Finally, focus on
-                  simplicity in accessories to maintain harmony without
-                  overwhelming the space.
-                </p>
-              </div>
             </li>
             <li>
               <strong>Mix Materials:</strong> Combine different materials such

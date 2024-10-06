@@ -76,8 +76,8 @@ const Header = () => {
               <Link className='inline-block me-2 nav-link active' to={`/bedroom/bedroom`}>
                 Bedroom
               </Link>
-              <Link className='inline-block me-2 nav-link active' to={`/bedroom/bedroom`}>
-                Bedroom
+              <Link className='inline-block me-2 nav-link active' to={`/contact`}>
+                Contact
               </Link>
               <Link className="inline-block me-2 nav-link active" to="/styling-tips">
                 Style

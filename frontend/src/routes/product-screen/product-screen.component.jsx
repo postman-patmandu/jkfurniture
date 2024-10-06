@@ -102,6 +102,9 @@ const ProductScreen = () => {
           <Row>
             <Col md={7}>
               <Image src={product.image} alt={product.name} fluid />
+              <div className="w-75 textcenter mt-2">
+                <p><small><strong>Disclaimer:</strong>The product images shown may represent the range of product and may not be an exact representation of the product.</small></p>
+              </div>
             </Col>
             <Col md={5}>
               {/* <ListGroup variant="flush"> */}
@@ -174,6 +177,18 @@ const ProductScreen = () => {
                       <p>Width: {product.width}</p>
                       <p>Height: {product.height}</p>
                       <p>Length: {product.length}</p>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Material</Accordion.Header>
+                    <Accordion.Body>
+                      <p>Material: {product.material}</p>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>Style</Accordion.Header>
+                    <Accordion.Body>
+                      <p>Style: {product.style}</p>
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>

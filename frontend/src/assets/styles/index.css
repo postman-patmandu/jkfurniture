@@ -129,23 +129,37 @@ product-card-title {
 
 .style-tips-container h1 {
   /* font-family: Marcellus, Arial, Helvetica, sans-serif; */
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+.style-tips-container h4 {
+  font-weight: bolder;
+  margin-top: 3rem;
 }
 
 .style-tips-container li {
   margin-bottom: 1rem;
   list-style-type: none;
   line-height: 1.75rem;
+  font-size: 1.1rem;
 }
 
 .style-tips-container li img {
-  width: 100%;
-  margin: 2rem 0;
+  width: 95%;
+  margin: 2rem auto;
+  text-align: center;
+  display: table;
 }
 
 .style-tips-container ul {
   margin-bottom: 2rem;
   padding: 0;
+}
+
+.style-tagline-box {
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
 }
 
 .style-box {

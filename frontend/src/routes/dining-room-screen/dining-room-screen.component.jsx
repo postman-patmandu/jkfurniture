@@ -29,7 +29,7 @@ const DiningRoomScreen = () => {
     setPriceValue(e.target.value);
   };
 
-
+  
   console.log("prod", products);
 
   if (!isLoading) {
@@ -48,32 +48,38 @@ const DiningRoomScreen = () => {
   return (
     <>
       <section className="room-container">
-        <div className="d-flex">
-          <Col className="filter-box" sm={12} lg={2}>
+        <div className="d-flex flex-wrap">
+          <Col className="filter-box" sm={12} md={2} lg={3}>
             <Col className="pe-2 my-3" sm={12}>
               <div>
                 <ListGroup className="categories-box">
                   <ListGroup.Item>
                     <div className="title-box">
-                      <p>
-                        <small>Categories</small>
-                      </p>
+                      
+                        <p>
+                          <small>Categories</small>
+                        </p>
+                    
                     </div>
-                    <Link className="nav-link mt-2" to={`/dining/Chair`}>
-                      <small>Dining Chairs</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/Diningtable`}>
-                      <small>Dining Tables</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/Buffet`}>
-                      <small>Buffet Tables</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/Display`}>
-                      <small>Display Units</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/Bar`}>
-                      <small>Bar</small>
-                    </Link>
+                      <Link className="nav-link mt-2" to={`/dining/Chair`}>
+                        <small>Dining Chairs</small>
+                      </Link>
+                      <Link
+                        className="nav-link mt-2"
+                        to={`/dining/Diningtable`}
+                      >
+                        <small>Dining Tables</small>
+                      </Link>
+                      <Link className="nav-link mt-2" to={`/dining/Buffet`}>
+                        <small>Buffet Tables</small>
+                      </Link>
+                      <Link className="nav-link mt-2" to={`/dining/Display`}>
+                        <small>Display Units</small>
+                      </Link>
+                      <Link className="nav-link mt-2" to={`/dining/Bar`}>
+                        <small>Bar</small>
+                      </Link>
+
                   </ListGroup.Item>
                 </ListGroup>
               </div>
@@ -101,7 +107,7 @@ const DiningRoomScreen = () => {
                   </div>
                 </ListGroup.Item>
                 <div className="range-value">${priceValue}</div>
-                 {/* <ListGroup.Item>
+                {/* <ListGroup.Item>
                       <div class="slide-container">
                         <FormRange
                           value={value}
@@ -192,46 +198,46 @@ const DiningRoomScreen = () => {
                 <div className="range-value">{heightValue}mm</div>
               </ListGroup>
               <ListGroup className="categories-box">
-                  <ListGroup.Item>
-                    <div className="title-box">
-                      <p>
-                        <small>Material</small>
-                      </p>
-                    </div>
-                    <Link className="nav-link mt-2" to={`/dining/pine`}>
-                      <small>Pine</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/timber`}>
-                      <small>Solid Timber</small>
-                    </Link>
-                  </ListGroup.Item>
-                </ListGroup>
+                <ListGroup.Item>
+                  <div className="title-box">
+                    <p>
+                      <small>Material</small>
+                    </p>
+                  </div>
+                  <Link className="nav-link mt-2" to={`/dining/pine`}>
+                    <small>Pine</small>
+                  </Link>
+                  <Link className="nav-link mt-2" to={`/dining/timber`}>
+                    <small>Solid Timber</small>
+                  </Link>
+                </ListGroup.Item>
+              </ListGroup>
               <ListGroup className="categories-box">
-                  <ListGroup.Item>
-                    <div className="title-box">
-                      <p>
-                        <small>Brand</small>
-                      </p>
-                    </div>
-                    <Link className="nav-link mt-2" to={`/dining/american`}>
-                      <small>American Rustic</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/casablanca`}>
-                      <small>Casablanca</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/industrial`}>
-                      <small>Industrial</small>
-                    </Link>
-                    <Link className="nav-link mt-2" to={`/dining/market`}>
-                      <small>Market Road</small>
-                    </Link>
-                  </ListGroup.Item>
-                </ListGroup>
+                <ListGroup.Item>
+                  <div className="title-box">
+                    <p>
+                      <small>Brand</small>
+                    </p>
+                  </div>
+                  <Link className="nav-link mt-2" to={`/dining/american`}>
+                    <small>American Rustic</small>
+                  </Link>
+                  <Link className="nav-link mt-2" to={`/dining/casablanca`}>
+                    <small>Casablanca</small>
+                  </Link>
+                  <Link className="nav-link mt-2" to={`/dining/industrial`}>
+                    <small>Industrial</small>
+                  </Link>
+                  <Link className="nav-link mt-2" to={`/dining/market`}>
+                    <small>Market Road</small>
+                  </Link>
+                </ListGroup.Item>
+              </ListGroup>
             </Col>
           </Col>
           {/* <FilterLivingRoom /> */}
 
-          <Col className="d-flex flex-wrap">
+          <Col className="d-flex flex-wrap" sm={12} lg={9}>
             <Row>
               {isLoading ? (
                 <Loader />
@@ -239,7 +245,7 @@ const DiningRoomScreen = () => {
                 <Message variant="danger">{error}</Message>
               ) : (
                 productArray.map((product) => (
-                  <Col key={product._id} sm={12} md={6} lg={4} xl={6}>
+                  <Col key={product._id} sm={12} md={6} lg={6} xl={6}>
                     <ProductFilter product={product} />
                   </Col>
                 ))

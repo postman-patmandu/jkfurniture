@@ -48,8 +48,8 @@ const LivingRoomScreen = () => {
   return (
     <>
       <section className="room-container">
-        <div className="d-flex">
-          <Col className="filter-box" sm={12} lg={2}>
+        <div className="d-flex flex-wrap">
+          <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>
               <div>
                 <ListGroup className="categories-box">
@@ -231,7 +231,7 @@ const LivingRoomScreen = () => {
           </Col>
           {/* <FilterLivingRoom /> */}
 
-          <Col className="d-flex flex-wrap">
+          <Col className="d-flex flex-wrap" sm={12} lg={9}>
             <Row>
               {isLoading ? (
                 <Loader />
@@ -239,7 +239,7 @@ const LivingRoomScreen = () => {
                 <Message variant="danger">{error}</Message>
               ) : (
                 productArray.map((product) => (
-                  <Col key={product._id} sm={12} md={6} lg={4} xl={6}>
+                  <Col key={product._id} sm={12} md={6} lg={6} xl={6}>
                     <ProductFilter product={product} />
                   </Col>
                 ))
