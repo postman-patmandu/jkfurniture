@@ -7,6 +7,9 @@ import Paginate from "../../components/paginate/paginate.component";
 import ProductCarousel from "../../components/product-carousel/product-carousel.component";
 import ProductCategories from "../../components/product-categories/product-categories.component";
 import Headings from "../../components/headings/headings.component";
+import TwoUp from "../../components/two-up/two-up.component";
+import TwoUpReverse from "../../components/two-up-reverse/two-up-reverse.component";
+import Showcase from "../../components/showcase/showcase.component";
 import ScrollTop from "../../utils/scroll-top.utils";
 import Meta from "../../components/meta/meta.component";
 import { useGetProductsQuery } from "../../slices/products-api-slice.component";
@@ -16,6 +19,21 @@ const HomeScreen = () => {
   const { data, isLoading, error } = useGetProductsQuery({ keyword, pageNumber });
   const headline = 'Latest\nProducts';
   const headlineTag = 'Selection';
+  const title = "Style";
+  const content = {
+    title: "Style Tips for Rustic Funiture",
+    text: `Stylish wooden rustic furniture combines natural textures and earthy tones, featuring 
+        reclaimed wood, distressed finishes, and handcrafted details. It exudes warmth and 
+        timeless charm, blending seamlessly with modern or traditional decor for a cozy, 
+        inviting atmosphere.`,
+    link: "/styling-tips"
+  }
+  const content1 = {
+    title: "Styling Rustic & Modern Furniture",
+    text: ` Use a neutral color palette to unify both styles, allowing natural wood tones to stand out. Incorporate soft textiles—like throws or rugs—to add warmth. Finally, focus on simplicity in accessories to main.`,
+    link: ""
+  }
+  const showcase = "Styling a mix of modern and rustic furniture creates a balanced, dynamic space. To achieve this look, start by pairing sleek, minimalist modern pieces with the warm textures of rustic wood furniture.";
   return (
     <>
       {!keyword ? ( 
@@ -45,6 +63,10 @@ const HomeScreen = () => {
             page={data.page}
             keyword={keyword ? keyword : ''}
             />
+
+            <TwoUp content={content} />
+            <Showcase body={showcase} />
+            <TwoUpReverse content={content1} />
             
             <ScrollTop />
            

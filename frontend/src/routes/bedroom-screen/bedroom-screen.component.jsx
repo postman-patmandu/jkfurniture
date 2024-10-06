@@ -194,6 +194,45 @@ const BedroomScreen = () => {
                 </ListGroup.Item>
                 <div className="range-value">{heightValue}mm</div>
               </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Material</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/bedroom/pine`}>
+                      <small>Pine</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/bedroom/timber`}>
+                      <small>Solid Timber</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Brand</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/bedroom/american`}>
+                      <small>American Rustic</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/bedroom/casablanca`}>
+                      <small>Casablanca</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/bedroom/industrial`}>
+                      <small>Industrial</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/bedroom/market`}>
+                      <small>Market Road</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/bedroom/paris`}>
+                      <small>Paris</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
             </Col>
           </Col>
           {/* <FilterLivingRoom /> */}

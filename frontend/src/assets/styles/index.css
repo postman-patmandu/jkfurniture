@@ -79,6 +79,84 @@ product-card-title {
   margin-bottom: 0.25rem;
 }
 
+.title-text-box {
+  padding: 2.5rem 5rem 1rem 0;
+}
+
+.two-up-reverse .title-text-box {
+  padding: 2.5rem 0 1rem 5rem;
+}
+
+.title-text-box h3 {
+  font-weight: bold;
+}
+
+.title-text-box p {
+  line-height: 1.65rem;
+}
+
+.two-up-reverse {
+  flex-direction: row-reverse;
+}
+
+.two-up, .two-up-reverse {
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.two-up a, .two-up-reverse a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.two-up-image img {
+  width: 100%;
+}
+
+.showcase-container {
+  background-color: #d8d7d6;
+  font-size: 1.35rem;
+  color:#212529;
+  padding: 8rem 15rem;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-bottom: 4.75rem;
+}
+
+.style-tips-container {
+  margin: 3rem 0;
+}
+
+.style-tips-container h1 {
+  /* font-family: Marcellus, Arial, Helvetica, sans-serif; */
+  margin-bottom: 3rem;
+}
+
+.style-tips-container li {
+  margin-bottom: 1rem;
+  list-style-type: none;
+  line-height: 1.75rem;
+}
+
+.style-tips-container li img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.style-tips-container ul {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.style-box {
+  background-color: #d8d7d6;
+  text-align: center;
+  padding:3rem 5rem;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+  line-height: 2.5rem;
+}
+
 .slide-container p {
   margin-bottom: 0.25rem;
 }
@@ -269,6 +347,9 @@ footer .policies, footer .links, footer .contact-us {
     margin-bottom: 0.25rem;
     padding-right: 1rem;
   } 
+  .showcase-container {
+    padding: 3rem 2rem;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -297,5 +378,18 @@ footer .policies, footer .links, footer .contact-us {
     margin-bottom: 0.25rem;
     padding-right: 1rem;
   } 
+
+  .showcase-container {
+    font-size: 1rem;
+    padding: 3rem 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.75rem;
+  }
+
+  .title-text-box {
+    padding-left: 0!important;
+  }
+  
 }
 

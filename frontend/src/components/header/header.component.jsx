@@ -76,8 +76,11 @@ const Header = () => {
               <Link className='inline-block me-2 nav-link active' to={`/bedroom/bedroom`}>
                 Bedroom
               </Link>
-              <Link className="inline-block me-2 nav-link active" to="/contact">
-                Contact
+              <Link className='inline-block me-2 nav-link active' to={`/bedroom/bedroom`}>
+                Bedroom
+              </Link>
+              <Link className="inline-block me-2 nav-link active" to="/styling-tips">
+                Style
               </Link>
               {/* <a href="/" onClick={menuLink} data-link="dining" className="inline-block me-2 nav-link active">Dining Room</a>
             <a href="/" onClick={menuLink} data-link="table" className="inline-block me-2 nav-link active">Living Room</a>

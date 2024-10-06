@@ -188,6 +188,45 @@ const LivingRoomScreen = () => {
                 </ListGroup.Item>
                 <div className="range-value">{heightValue}mm</div>
               </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Material</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/living/pine`}>
+                      <small>Pine</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/living/timber`}>
+                      <small>Solid Timber</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Brand</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/living/american`}>
+                      <small>American Rustic</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/living/casablanca`}>
+                      <small>Casablanca</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/living/industrial`}>
+                      <small>Industrial</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/living/market`}>
+                      <small>Market Road</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/living/paris`}>
+                      <small>Paris</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
             </Col>
           </Col>
           {/* <FilterLivingRoom /> */}

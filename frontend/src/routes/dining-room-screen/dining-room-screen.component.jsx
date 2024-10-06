@@ -191,6 +191,42 @@ const DiningRoomScreen = () => {
                 </ListGroup.Item>
                 <div className="range-value">{heightValue}mm</div>
               </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Material</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/dining/pine`}>
+                      <small>Pine</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/dining/timber`}>
+                      <small>Solid Timber</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
+              <ListGroup className="categories-box">
+                  <ListGroup.Item>
+                    <div className="title-box">
+                      <p>
+                        <small>Brand</small>
+                      </p>
+                    </div>
+                    <Link className="nav-link mt-2" to={`/dining/american`}>
+                      <small>American Rustic</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/dining/casablanca`}>
+                      <small>Casablanca</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/dining/industrial`}>
+                      <small>Industrial</small>
+                    </Link>
+                    <Link className="nav-link mt-2" to={`/dining/market`}>
+                      <small>Market Road</small>
+                    </Link>
+                  </ListGroup.Item>
+                </ListGroup>
             </Col>
           </Col>
           {/* <FilterLivingRoom /> */}
