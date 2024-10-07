@@ -7,7 +7,7 @@ const StyleTips = () => {
       <Row className="justify-content-center">
         <Col sm={12} md={9}>
           <h1>Mixing Modern & Rustic Furniture</h1>
-          <div className="style-tagline-box">
+          <div className="style-tagline-box" sm={12} md={9} >
             <p>
               Here are some handy styling tips for mixing modern and rustic furniture
               across the bedroom, dining, and living rooms:
