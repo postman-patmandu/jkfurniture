@@ -50,27 +50,27 @@ const createStripeSession = asyncHandler(async (req, res) => {
     shipping_address_collection: {
       allowed_countries: ['NZ'],
     },
-    shipping_options: [
-      {
-        shipping_rate_data: {
-          type: 'fixed_amount',
-          fixed_amount: {
-            amount: 0,
-            currency: 'nzd',
-          },
-          display_name: 'Free shipping',
-          delivery_estimate: {
-            minimum: {
-              unit: 'business_day',
-              value: 5,
-            },
-            maximum: {
-              unit: 'business_day',
-              value: 7,
-            },
-          },
-        },
-      },
+    // shipping_options: [
+    //   {
+    //     shipping_rate_data: {
+    //       type: 'fixed_amount',
+    //       fixed_amount: {
+    //         amount: 0,
+    //         currency: 'nzd',
+    //       },
+    //       display_name: 'Free shipping',
+    //       delivery_estimate: {
+    //         minimum: {
+    //           unit: 'business_day',
+    //           value: 5,
+    //         },
+    //         maximum: {
+    //           unit: 'business_day',
+    //           value: 7,
+    //         },
+    //       },
+    //     },
+    //   },
     //   {
     //     shipping_rate_data: {
     //       type: 'fixed_amount',
@@ -91,7 +91,7 @@ const createStripeSession = asyncHandler(async (req, res) => {
     //       },
     //     },
     //   },
-    ],
+    // ],
     line_items: line_items,
     mode: "payment",
     success_url: "https://www.furnitureshop.nz/success?session_id={CHECKOUT_SESSION_ID}",
