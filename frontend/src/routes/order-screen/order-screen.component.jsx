@@ -121,7 +121,7 @@ const OrderScreen = () => {
 
     const body = {
       products: order.orderItems,
-      orders: order
+      order: order
     }
 
     const headers = {
