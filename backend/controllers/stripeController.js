@@ -56,8 +56,8 @@ const createStripeSession = asyncHandler(async (req, res) => {
           address: {
             line1: order.shippingAddress.address,
             city: order.shippingAddress.city,
-            state: '',
-            country: order.shippingAddress.country,
+            state: 'NZ',
+            country: NZ,
             postal_code: order.shippingAddress.postCode,
          },
         },
