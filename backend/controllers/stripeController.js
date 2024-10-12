@@ -11,7 +11,7 @@ const stripe = Stripe(process.env.STRIPE_KEY);
 const createStripeSession = asyncHandler(async (req, res) => {
   const { products, order } = req.body;
 
-  console.log(order);
+  console.log('Order Details: ', order);
 
   const line_items = products.map((product) => ({
       price_data:{
@@ -47,21 +47,6 @@ const createStripeSession = asyncHandler(async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     // payment_method_types:["card"],
     payment_method_types: ['card', 'afterpay_clearpay'],
-    shipping_address_collection: {
-      allowed_countries: ['NZ'],
-    },
-    payment_intent_data: {
-        shipping: {
-          name: order.user.name,
-          address: {
-            line1: order.shippingAddress.address,
-            city: order.shippingAddress.city,
-            state: 'NZ',
-            country: NZ,
-            postal_code: order.shippingAddress.postCode,
-         },
-        },
-      },
     // shipping_options: [
     //   {
     //     shipping_rate_data: {
@@ -106,6 +91,21 @@ const createStripeSession = asyncHandler(async (req, res) => {
     // ],
     line_items: line_items,
     mode: "payment",
+    shipping_address_collection: {
+      allowed_countries: ['NZ'],
+    },
+    // payment_intent_data: {
+    //     shipping: {
+    //       name: order.user.name,
+    //       address: {
+    //         line1: order.shippingAddress.address,
+    //         city: order.shippingAddress.city,
+    //         state: 'NZ',
+    //         country: 'NZ',
+    //         postal_code: order.shippingAddress.postCode,
+    //      },
+    //     },
+    //   },
     success_url: "https://www.furnitureshop.nz/success?session_id={CHECKOUT_SESSION_ID}",
     cancel_url: "https://www.furnitureshop.nz"
   });

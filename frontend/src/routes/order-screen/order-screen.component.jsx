@@ -114,7 +114,6 @@ const OrderScreen = () => {
   //       return orderId;
   //   });
   // }
-  
 
   const makePayment = async (actions) => {
     const stripe = await loadStripe(KEY);
@@ -123,6 +122,8 @@ const OrderScreen = () => {
       products: order.orderItems,
       order: order
     }
+
+    console.log('Order Details: ', order);
 
     const headers = {
       "Content-Type": "application/json"
@@ -146,7 +147,7 @@ const OrderScreen = () => {
     dispatch(saveOrderId(orderId));
 
     const result = stripe.redirectToCheckout({
-      sessionId: session.id
+      sessionId: session.id,
     });
 
   };
