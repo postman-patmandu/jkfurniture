@@ -40,8 +40,8 @@ const HomeScreen = () => {
   const showcase = "Styling a mix of modern and rustic furniture creates a balanced, dynamic space. To achieve this look, start by pairing sleek, minimalist modern pieces with the warm textures of rustic wood furniture.";
   const metaDetails = {
     title: "Welcome to Furniture Shop NZ",
-    description: "Rustic furniture is characterized by its natural, raw beauty and rugged charm. ",
-    keywords: "what is rustic furniture, where to buy rustic furniture near me"
+    description: "Rustic furniture is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal, it emphasizes simplicity and craftsmanship. Rustic pieces often feature distressed finishes, visible grain patterns, and imperfections that highlight the material's organic nature.",
+    keywords: "what is rustic furniture, where to buy rustic furniture near me, furniture store, furniture stores, furniture stores, the furniture shop, reclaimed wood, distressed finishes, and handcrafted details. It exudes warmth and timeless charm, blending seamlessly with modern or traditional decor"
 
   }
   return (

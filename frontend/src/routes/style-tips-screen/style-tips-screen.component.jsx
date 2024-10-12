@@ -1,9 +1,13 @@
 import { Row, Col } from "react-bootstrap";
 import parisLvingRoom from "../../assets/paris-living-room.jpg";
+import Meta from "../../components/meta/meta.component";
 
 const StyleTips = () => {
+  const title = "Mixing Modern & Rustic Furniture"
+  const description = "Here are some handy styling tips for mixing modern and rustic furniture across the bedroom, dining, and living rooms:";
   return (
     <section className="style-tips-container">
+      <Meta title={title} description={description} />
       <Row className="justify-content-center">
         <Col sm={12} md={9}>
           <h1>Mixing Modern & Rustic Furniture</h1>

@@ -6,6 +6,7 @@ import ProductFilter from "../../components/product-filter/product-filter.compon
 import Product from "../../components/product/product.component";
 import Message from "../../components/message/message.component";
 import Loader from "../../components/loader/loader.component";
+import Meta from "../../components/meta/meta.component";
 // import FilterLivingRoom from '../../components/filter-living-room/filter-living-room.component';
 
 import { useGetTopProductsQuery } from "../../slices/products-api-slice.component";
@@ -19,6 +20,10 @@ const DiningRoomScreen = () => {
   const [lengthValue, setLengthValue] = useState(2183);
   const [heightValue, setHeightValue] = useState(2190);
   const [priceValue, setPriceValue] = useState(2255);
+
+  const title="Dining Room Rustic Furniture, Tables, Chairs, Display Units, Buffet Tables";
+  const description = "Rustic dining room furniture features solid, handcrafted pieces made from natural materials like reclaimed wood and metal. With distressed finishes, rich textures, and earthy tones, these dining tables, chairs, and benches bring warmth and timeless charm to any space. Ideal for farmhouse and rustic-modern interiors, rustic dining furniture blends rugged craftsmanship with a cozy, inviting aesthetic, perfect for family gatherings and entertaining.";
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
   let priceRange = document.querySelector(
     '.slide-container input[type="range"]'
@@ -47,6 +52,7 @@ const DiningRoomScreen = () => {
 
   return (
     <>
+    <Meta title={title} description={description} keywords={keywords} />
       <section className="room-container">
         <div className="d-flex flex-wrap">
           <Col className="filter-box" sm={12} md={2} lg={3}>

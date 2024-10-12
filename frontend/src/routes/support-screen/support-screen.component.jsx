@@ -1,9 +1,14 @@
 import React from 'react'
 import ScrollTop from '../../utils/scroll-top.utils';
+import Meta from '../../components/meta/meta.component';
 
 const SupportScreen = () => {
+  const title="Rustic Furniture, Furniture Shop, Furniture Store Suport Page";
+  const description = "Support for Rustic Furniture Shop NZ, The Furniture Store";
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Support for Rustic Furniture Shop NZ";
   return (
     <div>
+      <Meta title={title} description={description} keywords={keywords} />
         <h3 className='mt-4'>Customer Support for Furniture Shop</h3>
         <p>At Furniture Shop, we are committed to providing exceptional customer service to ensure a smooth and satisfying shopping experience. Below, you’ll find answers to frequently asked questions, support resources, and how to contact us for assistance.</p>
         <hr />

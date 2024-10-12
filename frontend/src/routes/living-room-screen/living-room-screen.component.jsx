@@ -6,6 +6,7 @@ import ProductFilter from "../../components/product-filter/product-filter.compon
 import Product from "../../components/product/product.component";
 import Message from "../../components/message/message.component";
 import Loader from "../../components/loader/loader.component";
+import Meta from "../../components/meta/meta.component";
 // import FilterLivingRoom from '../../components/filter-living-room/filter-living-room.component';
 
 import { useGetTopProductsQuery } from "../../slices/products-api-slice.component";
@@ -19,6 +20,10 @@ const LivingRoomScreen = () => {
   const [lengthValue, setLengthValue] = useState(1450);
   const [heightValue, setHeightValue] = useState(1350);
   const [priceValue, setPriceValue] = useState(900);
+
+  const title = "Living Room Rustic Furniture, TV Stands, Console Tables, Hall Tables, Coffee Tables, Lamp Tables";
+  const description = "Rustic living room furniture features natural materials like reclaimed wood, metal, and stone, with distressed finishes that highlight texture and craftsmanship. Sofas, coffee tables, consoles, and cabinets in warm, earthy tones bring cozy charm to any space. Ideal for farmhouse, cabin, or rustic-modern interiors, rustic living room furniture blends rugged beauty with comfort, creating an inviting, timeless atmosphere perfect for relaxation and entertaining."
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Living Room";
 
   let priceRange = document.querySelector(
     '.slide-container input[type="range"]'
@@ -48,6 +53,7 @@ const LivingRoomScreen = () => {
   return (
     <>
       <section className="room-container">
+        <Meta title={title} description={description} keywords={keywords} />
         <div className="d-flex flex-wrap">
           <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>

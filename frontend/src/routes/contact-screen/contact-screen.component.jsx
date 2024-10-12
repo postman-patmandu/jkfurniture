@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Headings from '../../components/headings/headings.component';
 import { Row, Col, Container, Form } from 'react-bootstrap';
 import {  useNavigate, Link } from 'react-router-dom';
+import Meta from '../../components/meta/meta.component';
 
 const ContactScreen = () => {
   const headline = 'Talk\n with us';
@@ -12,6 +13,10 @@ const ContactScreen = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage]= useState("");
   const [isPending, setIsPending] = useState("");
+
+  const title = "Furniture Shop NZ Contact us";
+  const description = "Rustic furniture Contact Furniture Shop NZ, The Furniture Store";
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
   const navigate = useNavigate();
 
@@ -46,6 +51,7 @@ const ContactScreen = () => {
 
   return (
     <div>
+      <Meta title={title} description={description} keywords={keywords} />
       <Container>
         <Row className="bg-light heading-bar"></Row>
         <Row>

@@ -1,9 +1,14 @@
 import React from 'react'
 import ScrollTop from '../../utils/scroll-top.utils';
+import Meta from '../../components/meta/meta.component';
 
 const PrivacyScreen = () => {
+    const title="Rustic Furniture, Furniture Shop, Furniture Store Privacy Policy";
+    const description = "Privacy Policy for Rustic Furniture Shop NZ, The Furniture Store";
+    const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Privacy Policy";
   return (
     <div>
+        <Meta title={title} description={description} keywords={keywords} />
         <h1 className='mt-4'>Privacy</h1>
         
         <h3 className='mt-4'>Privacy Policy for Furniture Shop</h3>

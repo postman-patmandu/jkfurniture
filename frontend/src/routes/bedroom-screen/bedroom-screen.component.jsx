@@ -6,6 +6,7 @@ import Product from "../../components/product/product.component";
 import Message from "../../components/message/message.component";
 import Loader from "../../components/loader/loader.component";
 import ProductFilter from "../../components/product-filter/product-filter.component";
+import Meta from "../../components/meta/meta.component";
 // import FilterLivingRoom from '../../components/filter-living-room/filter-living-room.component';
 
 import { useGetTopProductsQuery } from "../../slices/products-api-slice.component";
@@ -19,6 +20,10 @@ const BedroomScreen = () => {
   const [lengthValue, setLengthValue] = useState(2190);
   const [heightValue, setHeightValue] = useState(2183);
   const [priceValue, setPriceValue] = useState(1500);
+
+  const title = "Bedroom Rustic Furniture, Beds, Tall Boy, Dresser, Lamp Tables, Mirror";
+  const description = "Rustic bedroom furniture combines natural materials like reclaimed wood and metal with handcrafted details and distressed finishes. Featuring warm, earthy tones, these beds, dressers, nightstands, and wardrobes add a cozy, timeless charm to any bedroom. Perfect for farmhouse, cabin, or rustic-modern decor, rustic bedroom furniture emphasizes craftsmanship and simplicity, creating a peaceful, inviting atmosphere.";
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Bedroom";
 
   let priceRange = document.querySelector(
     '.slide-container input[type="range"]'
@@ -48,6 +53,7 @@ const BedroomScreen = () => {
   return (
     <>
       <section className="room-container">
+        <Meta title={title} description={description} keywords={keywords} />
         <div className="d-flex flex-wrap">
         <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>
