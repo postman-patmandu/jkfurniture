@@ -5,6 +5,7 @@ import { Form, Button, Col } from "react-bootstrap";
 import FormContainer from '../../components/form/form-container.component';
 import CheckoutSteps from "../../components/checkout-steps/checkout-steps.component";
 import { savePaymentMethod } from "../../slices/cart-slice.component";
+import Meta from "../../components/meta/meta.component";
 
 const PaymentScreen = () => {
   const [paymentMethod, setPaymentMethod] = useState("card");
@@ -29,6 +30,7 @@ const PaymentScreen = () => {
 
   return (
     <FormContainer>
+      <Meta />
       <CheckoutSteps step1 step2 step3 />
       <h1>Payment Method</h1>
       <Form onSubmit={ submitHandler }>

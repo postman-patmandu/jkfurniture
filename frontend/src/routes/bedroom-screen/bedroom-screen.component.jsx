@@ -17,9 +17,9 @@ const BedroomScreen = () => {
   const { data: products, isLoading, error } = useGetTopProductsQuery(keyword);
   let { productArray } = useState([]);
   const [widthValue, setWidthValue] = useState(2190);
-  const [lengthValue, setLengthValue] = useState(2190);
-  const [heightValue, setHeightValue] = useState(2183);
-  const [priceValue, setPriceValue] = useState(1500);
+  const [lengthValue, setLengthValue] = useState(2183);
+  const [heightValue, setHeightValue] = useState(2190);
+  const [priceValue, setPriceValue] = useState(2255);
 
   const title = "Bedroom Rustic Furniture, Beds, Tall Boy, Dresser, Lamp Tables, Mirror";
   const description = "Rustic bedroom furniture combines natural materials like reclaimed wood and metal with handcrafted details and distressed finishes. Featuring warm, earthy tones, these beds, dressers, nightstands, and wardrobes add a cozy, timeless charm to any bedroom. Perfect for farmhouse, cabin, or rustic-modern decor, rustic bedroom furniture emphasizes craftsmanship and simplicity, creating a peaceful, inviting atmosphere.";

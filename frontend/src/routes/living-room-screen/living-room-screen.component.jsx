@@ -16,10 +16,10 @@ const LivingRoomScreen = () => {
   const { keyword } = useParams();
   const { data: products, isLoading, error } = useGetTopProductsQuery(keyword);
   let { productArray } = useState([]);
-  const [widthValue, setWidthValue] = useState(1500);
-  const [lengthValue, setLengthValue] = useState(1450);
-  const [heightValue, setHeightValue] = useState(1350);
-  const [priceValue, setPriceValue] = useState(900);
+  const [widthValue, setWidthValue] = useState(2190);
+  const [lengthValue, setLengthValue] = useState(2183);
+  const [heightValue, setHeightValue] = useState(2190);
+  const [priceValue, setPriceValue] = useState(2255);
 
   const title = "Living Room Rustic Furniture, TV Stands, Console Tables, Hall Tables, Coffee Tables, Lamp Tables";
   const description = "Rustic living room furniture features natural materials like reclaimed wood, metal, and stone, with distressed finishes that highlight texture and craftsmanship. Sofas, coffee tables, consoles, and cabinets in warm, earthy tones bring cozy charm to any space. Ideal for farmhouse, cabin, or rustic-modern interiors, rustic living room furniture blends rugged beauty with comfort, creating an inviting, timeless atmosphere perfect for relaxation and entertaining."

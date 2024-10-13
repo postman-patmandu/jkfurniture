@@ -21,6 +21,7 @@ import {
 } from "../../slices/orders-api-slice.component";
 import { saveOrderId } from "../../slices/cart-slice.component";
 import { loadStripe } from "@stripe/stripe-js";
+import Meta from "../../components/meta/meta.component";
 // import { Elements } from "@stripe/react-stripe-js";
 
 // dotenv.config();
@@ -171,6 +172,7 @@ const OrderScreen = () => {
     <>
       <h1>Order {order._id}</h1>
       <Row>
+        <Meta /> 
         <Col md={8}>
           <ListGroup variant="flush">
             <ListGroup.Item>

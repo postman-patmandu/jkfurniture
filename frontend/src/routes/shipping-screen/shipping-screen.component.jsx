@@ -6,6 +6,7 @@ import FormContainer from "../../components/form/form-container.component";
 import { saveShippingAddress } from "../../slices/cart-slice.component";
 import CheckoutSteps from "../../components/checkout-steps/checkout-steps.component";
 import ScrollTop from "../../utils/scroll-top.utils";
+import Meta from "../../components/meta/meta.component";
 
 const ShippingScreen = () => {
   const cart = useSelector((state) => state.cart);
@@ -23,13 +24,13 @@ const ShippingScreen = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(saveShippingAddress({ address, city, postCode, country }));
-    navigate("/payment");
+    navigate("/placeorder");
   };
 
   return (
     <FormContainer>
       <CheckoutSteps step1 step2 />
-      
+      <Meta />
       <h1>Shipping</h1>
 
       <Form onSubmit={submitHandler}>

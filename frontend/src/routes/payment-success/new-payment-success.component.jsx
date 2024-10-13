@@ -14,6 +14,7 @@ import {
     usePayOrderMutation,
     usePaidOrderMutation,
 } from "../../slices/orders-api-slice.component";
+import Meta from '../../components/meta/meta.component';
 import { saveOrderId } from "../../slices/cart-slice.component";
 
 // import { loadStripe } from "@stripe/stripe-js";
@@ -82,6 +83,7 @@ const NewPaymentSuccess = () => {
         <div>
             {/* {Listing.payment_status} */}
             <Row>
+                <Meta />
                 <Col md={8}>
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
