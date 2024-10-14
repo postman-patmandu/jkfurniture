@@ -7,11 +7,15 @@ import { saveShippingAddress } from "../../slices/cart-slice.component";
 import CheckoutSteps from "../../components/checkout-steps/checkout-steps.component";
 import ScrollTop from "../../utils/scroll-top.utils";
 import Meta from "../../components/meta/meta.component";
+import Notification from "../../components/notification/notification.component";
 
 const ShippingScreen = () => {
   const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
-
+  const notification = {
+    title: 'Delivery Options',
+    textContent: 'Once delivery items are ready to ship you will be contact by email!'
+  }
 
   const [address, setAddress] = useState(shippingAddress?.address || "");
   const [city, setCity] = useState(shippingAddress?.city || "");
@@ -75,6 +79,7 @@ const ShippingScreen = () => {
           Continue
         </Button>
       </Form>
+      <Notification content={notification} />
       <ScrollTop />
     </FormContainer>
   );
