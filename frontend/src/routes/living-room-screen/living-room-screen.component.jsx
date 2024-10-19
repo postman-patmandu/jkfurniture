@@ -23,7 +23,7 @@ const LivingRoomScreen = () => {
   const [priceValue, setPriceValue] = useState(2255);
 
   const title = "Living Room Rustic Furniture, TV Stands, Console Tables, Hall Tables, Coffee Tables, Lamp Tables";
-  const description = "Rustic living room furniture features natural materials like reclaimed wood, metal, and stone, with distressed finishes."
+  const description = "Rustic living room furniture from Furniture Shop features natural materials like reclaimed wood, metal, and stone, with distressed finishes."
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Living Room";
 
   let priceRange = document.querySelector(
@@ -58,7 +58,7 @@ const LivingRoomScreen = () => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <link rel="canonical" href="/living/living" />
+            <link rel="canonical" href="https://www.furnitureshop.nz/living/living" />
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
         {/* <Meta title={title} description={description} keywords={keywords} /> */}

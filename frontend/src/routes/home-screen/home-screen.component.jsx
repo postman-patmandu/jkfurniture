@@ -40,8 +40,8 @@ const HomeScreen = () => {
   }
   const showcase = "Styling a mix of modern and rustic furniture creates a balanced, dynamic space. To achieve this look, start by pairing sleek, minimalist modern pieces with the warm textures of rustic wood furniture.";
   const metaDetails = {
-    title: "Welcome to Furniture Shop NZ",
-    description: "Rustic furniture is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal.",
+    title: "Rustic Furniture with warmth and timeless charm, blending seamlessly with modern or traditional decor - Furniture Shop NZ",
+    description: "Rustic furniture from Furniture Shop is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal.",
     keywords: "what is rustic furniture, where to buy rustic furniture near me, furniture store, furniture stores, furniture stores, the furniture shop, reclaimed wood, distressed finishes, and handcrafted details. It exudes warmth and timeless charm, blending seamlessly with modern or traditional decor"
   }
   return (
@@ -62,7 +62,7 @@ const HomeScreen = () => {
             <title>{metaDetails.title}</title>
             <meta name="description" content={metaDetails.description} />
             <meta name="keywords" content={metaDetails.keywords} />
-            <link rel="canonical" href="/" />
+            <link rel="canonical" href="https://www.furnitureshop.nz" />
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
           <ProductCategories />

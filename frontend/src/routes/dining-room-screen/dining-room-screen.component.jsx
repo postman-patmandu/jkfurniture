@@ -23,7 +23,7 @@ const DiningRoomScreen = () => {
   const [priceValue, setPriceValue] = useState(2255);
 
   const title="Dining Room Rustic Furniture, Tables, Chairs, Display Units, Buffet Tables";
-  const description = "Rustic dining room furniture features solid, handcrafted pieces made from natural materials like reclaimed wood and metal.";
+  const description = "Rustic dining room furniture from furniture Shop features solid, handcrafted pieces made from natural materials like reclaimed wood and metal.";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
   let priceRange = document.querySelector(
@@ -57,7 +57,7 @@ const DiningRoomScreen = () => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <link rel="canonical" href="/dining/dining" />
+            <link rel="canonical" href="https://www.furnitureshop.nz/dining/dining" />
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
     {/* <Meta title={title} description={description} keywords={keywords} /> */}

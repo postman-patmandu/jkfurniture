@@ -23,7 +23,7 @@ const BedroomScreen = () => {
   const [priceValue, setPriceValue] = useState(2255);
 
   const title = "Bedroom Rustic Furniture, Beds, Tall Boy, Dresser, Lamp Tables, Mirror";
-  const description = "Rustic bedroom furniture combines natural materials like reclaimed wood and metal with handcrafted details and distressed finishes.";
+  const description = "Rustic bedroom furniture from Furniture Shop combines natural materials like reclaimed wood and metal with handcrafted details and distressed finishes.";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Bedroom";
 
   let priceRange = document.querySelector(
@@ -58,7 +58,7 @@ const BedroomScreen = () => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <link rel="canonical" href="/bedroom/bedroom" />
+            <link rel="canonical" href="https://www.furnitureshop.nz/bedroom/bedroom" />
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
         {/* <Meta title={title} description={description} keywords={keywords} /> */}

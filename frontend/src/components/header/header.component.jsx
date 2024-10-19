@@ -67,6 +67,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
             <Nav className="ms-auto flex-wrap">
+            <Link className='inline-block me-2 nav-link active' to={`/products`}>
+                Products
+              </Link>
               <Link className='inline-block me-2 nav-link active' to={`/dining/dining`}>
                 Dining Room
               </Link>

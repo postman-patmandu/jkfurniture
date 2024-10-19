@@ -13,7 +13,7 @@ const TermsScreen = () => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
-            <link rel="canonical" href="/terms" />
+            <link rel="canonical" href="https://www.furnitureshop.nz/terms" />
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
         </Helmet>
         {/* <Meta title={title} description={description} keywords={keywords} /> */}
