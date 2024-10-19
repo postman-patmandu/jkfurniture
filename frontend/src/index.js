@@ -41,6 +41,7 @@ import ProductListScreen from './routes/admin/product-list-screen/product-list-s
 import ProductEditScreen from './routes/admin/product-edit-screen/product-edit-screen.component';
 import UserListScreen from './routes/admin/user-list-screen/user-list-screen.component';
 import UserEditScreen from './routes/admin/user-edit-screen/user-edit-screen.component';
+import MainProductsScreen from './routes/main-products-screen/main-products-screen';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -50,6 +51,7 @@ const router = createBrowserRouter(
       <Route path='/page/:pageNumber' element={<HomeScreen />} />
       <Route path='/search/:keyword/page/:pageNumber' element={<HomeScreen />} />
       <Route path='/product/:id' element={<ProductScreen />} />
+      <Route path='/products' element={<MainProductsScreen />} />
       <Route path='/living/:keyword/' element={<LivingRoomScreen />} />
       <Route path='/dining/:keyword/' element={<DiningRoomScreen />} />
       <Route path='/bedroom/:keyword/' element={<BedroomScreen />} />

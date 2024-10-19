@@ -23,7 +23,7 @@ const DiningRoomScreen = () => {
   const [priceValue, setPriceValue] = useState(2255);
 
   const title="Dining Room Rustic Furniture, Tables, Chairs, Display Units, Buffet Tables";
-  const description = "Rustic dining room furniture features solid, handcrafted pieces made from natural materials like reclaimed wood and metal. With distressed finishes, rich textures, and earthy tones, these dining tables, chairs, and benches bring warmth and timeless charm to any space. Ideal for farmhouse and rustic-modern interiors, rustic dining furniture blends rugged craftsmanship with a cozy, inviting aesthetic, perfect for family gatherings and entertaining.";
+  const description = "Rustic dining room furniture features solid, handcrafted pieces made from natural materials like reclaimed wood and metal.";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
   let priceRange = document.querySelector(

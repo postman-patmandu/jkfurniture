@@ -103,7 +103,7 @@ const ProductScreen = () => {
             <title>{product.name}</title>
             {/* <meta name="description" content={description} />
             <meta name="keywords" content={keywords} /> */}
-            <link rel="canonical" href={`/product/${productId}`} />
+            <link rel="canonical" href={`https://www.furnitureshop.nz/product/${product._id}`} />
         </Helmet>
           {/* <Meta title={product.name} description={product.description} /> */}
           <Row>
