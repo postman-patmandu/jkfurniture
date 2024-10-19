@@ -62,6 +62,10 @@ const ProductScreen = () => {
     navigate("/cart");
   };
 
+  const limit = (string = '', limit = 0) => {  
+    return string.substring(0, limit)
+  }
+
   console.log('Products: ', products);
 
   // const product = products.find((p) => p._id === productId);
@@ -101,8 +105,8 @@ const ProductScreen = () => {
         <>
         <Helmet>
             <title>{product.name}</title>
-            {/* <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} /> */}
+            <meta name="description" content={limit(product.description, 160)} />
+            {/* <meta name="keywords" content={keywords} /> */}
             <link rel="canonical" href={`https://www.furnitureshop.nz/product/${product._id}`} />
         </Helmet>
           {/* <Meta title={product.name} description={product.description} /> */}
