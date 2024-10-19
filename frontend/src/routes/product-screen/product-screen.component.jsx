@@ -17,7 +17,8 @@ import Loader from "../../components/loader/loader.component";
 import Product from "../../components/product/product.component";
 import Message from "../../components/message/message.component";
 import { toast } from "react-toastify";
-import Meta from "../../components/meta/meta.component";
+// import Meta from "../../components/meta/meta.component";
+import { Helmet } from "react-helmet-async";
 import {
   useGetSelectedProductsQuery,
   useGetProductDetailsQuery,
@@ -98,7 +99,13 @@ const ProductScreen = () => {
         </Message>
       ) : (
         <>
-          <Meta title={product.name} description={product.description} />
+        <Helmet>
+            <title>{product.name}</title>
+            {/* <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} /> */}
+            <link rel="canonical" href={`/product/${productId}`} />
+        </Helmet>
+          {/* <Meta title={product.name} description={product.description} /> */}
           <Row>
             <Col md={7}>
               <Image src={product.image} alt={product.name} fluid />

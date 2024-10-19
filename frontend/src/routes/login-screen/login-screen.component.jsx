@@ -7,6 +7,7 @@ import Loader from '../../components/loader/loader.component';
 import { useLoginMutation } from '../../slices/users-api-slice.component';
 import { setCredentials } from '../../slices/auth-slice.component';
 import { toast } from 'react-toastify';
+import Meta from '../../components/meta/meta.component';
 
 const LoginScreen = () => {
     const [email, setEmail] = useState('');
@@ -42,6 +43,7 @@ const LoginScreen = () => {
 
   return (
     <FormContainer>
+        <Meta />
         <h1>Sign In</h1>
 
         <Form onSubmit={submitHandler}>

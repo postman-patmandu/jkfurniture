@@ -33,6 +33,7 @@ const ShippingScreen = () => {
 
   return (
     <FormContainer>
+      <meta />
       <CheckoutSteps step1 step2 />
       <Meta />
       <h1>Shipping</h1>

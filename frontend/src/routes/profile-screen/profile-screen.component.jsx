@@ -9,6 +9,7 @@ import { FaTimes } from 'react-icons/fa';
 import { useProfileMutation } from '../../slices/users-api-slice.component';
 import { setCredentials } from '../../slices/auth-slice.component';
 import { useGetMyOrdersQuery } from '../../slices/orders-api-slice.component';
+import Meta from '../../components/meta/meta.component';
 
 const ProfileScreen = () => {
     const [name, setName] = useState("");
@@ -48,6 +49,7 @@ const ProfileScreen = () => {
 
   return <Row>
     <Col md={3}>
+        <Meta />
         <h2>User Profile</h2>
 
         <Form onSubmit={submitHandler}>

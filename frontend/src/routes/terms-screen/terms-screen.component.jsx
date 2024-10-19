@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollTop from '../../utils/scroll-top.utils';
-import Meta from '../../components/meta/meta.component';
+import { Helmet } from 'react-helmet-async';
+// import Meta from '../../components/meta/meta.component';
 
 const TermsScreen = () => {
   const title="Rustic Furniture, Furniture Shop, Furniture Store Terms & Conditions Page";
@@ -8,7 +9,14 @@ const TermsScreen = () => {
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Terms & Conditions for Rustic Furniture Shop NZ";
   return (
     <div>
-        <Meta title={title} description={description} keywords={keywords} />
+        <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="canonical" href="/terms" />
+            {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
+        </Helmet>
+        {/* <Meta title={title} description={description} keywords={keywords} /> */}
         <h3 className='mt-5'>Terms &amp; Conditions for Furniture Shop</h3>
         <p><strong>Effective Date:</strong> 21 September 2024</p>
         <p>Welcome to Furniture Shop. These Terms &amp; Conditions ("Terms") govern your use of our website and the purchase of products from our online store. By accessing or using our website, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use our website or services.</p>

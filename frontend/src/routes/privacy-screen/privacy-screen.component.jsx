@@ -1,6 +1,7 @@
 import React from 'react'
 import ScrollTop from '../../utils/scroll-top.utils';
-import Meta from '../../components/meta/meta.component';
+import { Helmet } from 'react-helmet-async';
+// import Meta from '../../components/meta/meta.component';
 
 const PrivacyScreen = () => {
     const title="Rustic Furniture, Furniture Shop, Furniture Store Privacy Policy";
@@ -8,7 +9,14 @@ const PrivacyScreen = () => {
     const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Privacy Policy";
   return (
     <div>
-        <Meta title={title} description={description} keywords={keywords} />
+        <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="canonical" href="/privacy" />
+            {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
+          </Helmet>
+        {/* <Meta title={title} description={description} keywords={keywords} /> */}
         <h1 className='mt-4'>Privacy</h1>
         
         <h3 className='mt-4'>Privacy Policy for Furniture Shop</h3>

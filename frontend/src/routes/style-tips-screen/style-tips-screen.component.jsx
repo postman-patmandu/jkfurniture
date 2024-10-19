@@ -1,13 +1,22 @@
 import { Row, Col } from "react-bootstrap";
 import parisLvingRoom from "../../assets/paris-living-room.jpg";
+import { Helmet } from "react-helmet-async";
 import Meta from "../../components/meta/meta.component";
 
 const StyleTips = () => {
   const title = "Mixing Modern & Rustic Furniture"
   const description = "Here are some handy styling tips for mixing modern and rustic furniture across the bedroom, dining, and living rooms:";
+  const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Support for Rustic Furniture Shop NZ";
   return (
     <section className="style-tips-container">
-      <Meta title={title} description={description} />
+      <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="canonical" href="/style" />
+            {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
+        </Helmet>
+      {/* <Meta title={title} description={description} /> */}
       <Row className="justify-content-center">
         <Col sm={12} md={9}>
           <h1>Mixing Modern & Rustic Furniture</h1>

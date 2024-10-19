@@ -6,7 +6,8 @@ import ProductFilter from "../../components/product-filter/product-filter.compon
 import Product from "../../components/product/product.component";
 import Message from "../../components/message/message.component";
 import Loader from "../../components/loader/loader.component";
-import Meta from "../../components/meta/meta.component";
+import { Helmet } from "react-helmet-async";
+// import Meta from "../../components/meta/meta.component";
 // import FilterLivingRoom from '../../components/filter-living-room/filter-living-room.component';
 
 import { useGetTopProductsQuery } from "../../slices/products-api-slice.component";
@@ -53,7 +54,14 @@ const LivingRoomScreen = () => {
   return (
     <>
       <section className="room-container">
-        <Meta title={title} description={description} keywords={keywords} />
+      <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="canonical" href="/living/living" />
+            {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
+          </Helmet>
+        {/* <Meta title={title} description={description} keywords={keywords} /> */}
         <div className="d-flex flex-wrap">
           <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>

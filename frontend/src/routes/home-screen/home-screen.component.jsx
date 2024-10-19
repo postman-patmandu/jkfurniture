@@ -15,6 +15,7 @@ import industrialImage from "../../assets/industrial-bedroom-image.jpg";
 import marketRoadImage from "../../assets/market-road-dining.jpg";
 import Meta from "../../components/meta/meta.component";
 import { useGetProductsQuery } from "../../slices/products-api-slice.component";
+import { Helmet } from "react-helmet-async";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -40,9 +41,8 @@ const HomeScreen = () => {
   const showcase = "Styling a mix of modern and rustic furniture creates a balanced, dynamic space. To achieve this look, start by pairing sleek, minimalist modern pieces with the warm textures of rustic wood furniture.";
   const metaDetails = {
     title: "Welcome to Furniture Shop NZ",
-    description: "Rustic furniture is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal, it emphasizes simplicity and craftsmanship. Rustic pieces often feature distressed finishes, visible grain patterns, and imperfections that highlight the material's organic nature.",
+    description: "Rustic furniture is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal.",
     keywords: "what is rustic furniture, where to buy rustic furniture near me, furniture store, furniture stores, furniture stores, the furniture shop, reclaimed wood, distressed finishes, and handcrafted details. It exudes warmth and timeless charm, blending seamlessly with modern or traditional decor"
-
   }
   return (
     <>
@@ -58,7 +58,13 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} />
+          <Helmet>
+            <title>{metaDetails.title}</title>
+            <meta name="description" content={metaDetails.description} />
+            <meta name="keywords" content={metaDetails.keywords} />
+            <link rel="canonical" href="/" />
+            {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
+          </Helmet>
           <ProductCategories />
           <Headings headline={headline} headlineTag={headlineTag} />
           <Row>

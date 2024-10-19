@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Headings from '../../components/headings/headings.component';
 import { Row, Col, Container, Form } from 'react-bootstrap';
 import {  useNavigate, Link } from 'react-router-dom';
-import Meta from '../../components/meta/meta.component';
+// import Meta from '../../components/meta/meta.component';
+import { Helmet } from 'react-helmet-async';
 
 const ContactScreen = () => {
   const headline = 'Talk\n with us';
@@ -51,7 +52,13 @@ const ContactScreen = () => {
 
   return (
     <div>
-      <Meta title={title} description={description} keywords={keywords} />
+      <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta name="keywords" content={keywords} />
+            <link rel="canonical" href="/contact" />
+          </Helmet>
+      {/* <Meta title={title} description={description} keywords={keywords} /> */}
       <Container>
         <Row className="bg-light heading-bar"></Row>
         <Row>
