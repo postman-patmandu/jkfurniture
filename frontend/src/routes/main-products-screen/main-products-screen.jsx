@@ -27,7 +27,7 @@ const MainProductsScreen = () => {
   const description = "Rustic furniture blends natural wood tones and rugged textures, creating warm, cozy spaces for dining, living, and bedroom areas with timeless, earthy charm."
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Living Room";
 
-  const headline = "Products";
+  const headline = "All Furniture \nProduct Ranges";
   const headlineTag = "All Products";
 
   let priceRange = document.querySelector(

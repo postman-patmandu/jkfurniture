@@ -22,7 +22,7 @@ const DiningRoomScreen = () => {
   const [heightValue, setHeightValue] = useState(2190);
   const [priceValue, setPriceValue] = useState(2255);
 
-  const title="Dining Room Rustic Furniture, Tables, Chairs, Display Units, Buffet Tables";
+  const title="Dining Room Rustic Furniture, Tables, Chairs";
   const description = "Rustic dining room furniture from furniture Shop features solid, handcrafted pieces made from natural materials like reclaimed wood and metal.";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
@@ -61,6 +61,7 @@ const DiningRoomScreen = () => {
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
     {/* <Meta title={title} description={description} keywords={keywords} /> */}
+    <h1>Dining Room Furniture</h1>
       <section className="room-container">
         <div className="d-flex flex-wrap">
           <Col className="filter-box" sm={12} md={2} lg={3}>

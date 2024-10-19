@@ -17,7 +17,7 @@ const SupportScreen = () => {
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
         </Helmet>
       {/* <Meta title={title} description={description} keywords={keywords} /> */}
-        <h3 className='mt-4'>Customer Support for Furniture Shop</h3>
+        <h1 className='mt-4'>Customer Support for Furniture Shop</h1>
         <p>At Furniture Shop, we are committed to providing exceptional customer service to ensure a smooth and satisfying shopping experience. Below, you’ll find answers to frequently asked questions, support resources, and how to contact us for assistance.</p>
         <hr />
         <h3>1. <strong>Frequently Asked Questions (FAQs)</strong></h3>

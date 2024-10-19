@@ -20,7 +20,7 @@ import { Helmet } from "react-helmet-async";
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
   const { data, isLoading, error } = useGetProductsQuery({ keyword, pageNumber });
-  const headline = 'Latest\nProducts';
+  const headline = 'Latest Line\n of Products';
   const headlineTag = 'Selection';
   const title = "Style";
   const content = {
@@ -40,7 +40,7 @@ const HomeScreen = () => {
   }
   const showcase = "Styling a mix of modern and rustic furniture creates a balanced, dynamic space. To achieve this look, start by pairing sleek, minimalist modern pieces with the warm textures of rustic wood furniture.";
   const metaDetails = {
-    title: "Rustic Furniture with warmth and timeless charm, blending seamlessly with modern or traditional decor - Furniture Shop NZ",
+    title: "Rustic Furniture with warmth and timeless charm Furniture Shop NZ",
     description: "Rustic furniture from Furniture Shop is characterized by its natural, raw beauty and rugged charm. Typically crafted from materials like reclaimed wood, stone, or metal.",
     keywords: "what is rustic furniture, where to buy rustic furniture near me, furniture store, furniture stores, furniture stores, the furniture shop, reclaimed wood, distressed finishes, and handcrafted details. It exudes warmth and timeless charm, blending seamlessly with modern or traditional decor"
   }

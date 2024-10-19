@@ -22,7 +22,7 @@ const BedroomScreen = () => {
   const [heightValue, setHeightValue] = useState(2190);
   const [priceValue, setPriceValue] = useState(2255);
 
-  const title = "Bedroom Rustic Furniture, Beds, Tall Boy, Dresser, Lamp Tables, Mirror";
+  const title = "Bedroom Rustic Furniture, Beds, Tall Boy, Dresser";
   const description = "Rustic bedroom furniture from Furniture Shop combines natural materials like reclaimed wood and metal with handcrafted details and distressed finishes.";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Bedroom";
 
@@ -62,6 +62,7 @@ const BedroomScreen = () => {
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
         {/* <Meta title={title} description={description} keywords={keywords} /> */}
+        <h1>Bedroom Furniture Range</h1>
         <div className="d-flex flex-wrap">
         <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>

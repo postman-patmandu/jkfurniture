@@ -32,8 +32,8 @@ import Headings from "../../components/headings/headings.component";
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
-  const headline = 'You\nMay Also';
-  const headlineTag = 'Like';
+  const headline = 'You May\nAlso Like These';
+  const headlineTag = 'Products';
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -120,7 +120,7 @@ const ProductScreen = () => {
             <Col md={5}>
               {/* <ListGroup variant="flush"> */}
               <ListGroup.Item>
-                <h1 className="mt-3 h3">{product.name}</h1>
+                <h3 className="mt-3">{product.name}</h3>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>

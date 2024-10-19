@@ -16,7 +16,7 @@ const ContactScreen = () => {
   const [isPending, setIsPending] = useState("");
 
   const title = "Furniture Shop NZ Contact us";
-  const description = "Rustic furniture Contact Furniture Shop NZ, The Furniture Store";
+  const description = "Rustic furniture shop Contact Furniture Shop NZ";
   const keywords = "Rustic Furniture, Furniture Shop, Furniture Shop NZ, furniture store, furniture stores, furniture stores, the furniture shop, Dining Room";
 
   const navigate = useNavigate();
