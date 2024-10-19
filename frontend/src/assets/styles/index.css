@@ -347,6 +347,10 @@ footer .policies, footer .links, footer .contact-us {
   margin-bottom: 1.5rem;
 }
 
+.h3 {
+  font-size: 1.75rem;
+}
+
 @media only screen and (max-width: 1024px) {
   #cart-items {
     align-self: start;
