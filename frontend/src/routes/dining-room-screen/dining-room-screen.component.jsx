@@ -61,7 +61,7 @@ const DiningRoomScreen = () => {
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
     {/* <Meta title={title} description={description} keywords={keywords} /> */}
-    <h1>Dining Room Furniture</h1>
+    <h1 className="h3">Dining Room Furniture</h1>
       <section className="room-container">
         <div className="d-flex flex-wrap">
           <Col className="filter-box" sm={12} md={2} lg={3}>

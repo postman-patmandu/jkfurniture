@@ -62,7 +62,7 @@ const BedroomScreen = () => {
             {/* <Meta tite={metaDetails.title} description={metaDetails.description} keywords={metaDetails.keywords} /> */}
           </Helmet>
         {/* <Meta title={title} description={description} keywords={keywords} /> */}
-        <h1>Bedroom Furniture Range</h1>
+        <h1 className="h3">Bedroom Furniture Range</h1>
         <div className="d-flex flex-wrap">
         <Col className="filter-box" sm={12} lg={3}>
             <Col className="pe-2 my-3" sm={12}>
