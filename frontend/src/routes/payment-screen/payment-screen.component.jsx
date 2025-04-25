@@ -8,7 +8,7 @@ import { savePaymentMethod } from "../../slices/cart-slice.component";
 import Meta from "../../components/meta/meta.component";
 
 const PaymentScreen = () => {
-  const [paymentMethod, setPaymentMethod] = useState("card");
+  const [paymentMethod, setPaymentMethod] = useState("credit card");
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ const PaymentScreen = () => {
               className="my-2"
               label="Credit Card"
               name="paymentMethod"
-              value="card"
+              value="credit card, afterpay "
               checkedonChange={(e) => setPaymentMethod(e.target.value)}
             ></Form.Check>
           </Col>
